@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.ctut.edu.vn/material"
+           xmlns="http://www.ctut.edu.vn/material"
+           elementFormDefault="qualified">
+
+  <xs:element name="TailorTrackSystem">
+    <xs:complexType>
+      <xs:sequence>
+
+        <!-- ========== KHACH HANG ========== -->
+        <xs:element name="KhachHang" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_khach_hang" type="xs:string"/>
+              <xs:element name="ho_ten" type="xs:string"/>
+              <xs:element name="email" type="xs:string"/>
+              <xs:element name="so_dien_thoai" type="xs:string"/>
+              <xs:element name="dia_chi" type="xs:string"/>
+              <xs:element name="ngay_dang_ky" type="xs:date"/>
+              <xs:element name="diem_tich_luy" type="xs:integer"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ========== NHAN VIEN ========== -->
+        <xs:element name="NhanVien" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_nhan_vien" type="xs:string"/>
+              <xs:element name="ho_ten" type="xs:string"/>
+              <xs:element name="email" type="xs:string"/>
+              <xs:element name="so_dien_thoai" type="xs:string"/>
+              <xs:element name="chuc_vu" type="xs:string"/>
+              <xs:element name="luong" type="xs:decimal"/>
+              <xs:element name="ngay_tuyen" type="xs:date"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ========== DON HANG ========== -->
+        <xs:element name="DonHang" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_don_hang" type="xs:string"/>
+              <xs:element name="ngay_dat" type="xs:date"/>
+              <xs:element name="tong_tien" type="xs:decimal"/>
+              <xs:element name="trang_thai" type="xs:string"/>
+              <xs:element name="ma_khach_hang" type="xs:string"/>
+              <xs:element name="mo_ta_yeu_cau" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ========== DON HANG - NHAN VIEN (bảng gán) ========== -->
+        <xs:element name="DonHangNhanVien" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_don_hang_nhan_vien" type="xs:string"/>
+              <xs:element name="ma_don_hang" type="xs:string"/>
+              <xs:element name="ma_nhan_vien" type="xs:string"/>
+              <xs:element name="vai_tro" type="xs:string"/>
+              <xs:element name="ghi_chu" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ========== CHI TIET DON HANG ========== -->
+        <xs:element name="ChiTietDonHang" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_chi_tiet_don_hang" type="xs:string"/>
+              <xs:element name="so_luong" type="xs:integer"/>
+              <xs:element name="gia_don_vi" type="xs:decimal"/>
+              <xs:element name="ma_don_hang" type="xs:string"/>
+              <xs:element name="ma_san_pham" type="xs:string"/>
+              <xs:element name="loai_san_pham" type="xs:string" minOccurs="0"/>
+              <xs:element name="trang_thai" type="xs:string" minOccurs="0"/>
+              <xs:element name="mo_ta" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ========== SAN PHAM ========== -->
+        <xs:element name="SanPham" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_san_pham" type="xs:string"/>
+              <xs:element name="ten_san_pham" type="xs:string"/>
+              <xs:element name="mo_ta" type="xs:string" minOccurs="0"/>
+              <xs:element name="kich_co" type="xs:string" minOccurs="0"/>
+              <xs:element name="mau_sac" type="xs:string" minOccurs="0"/>
+              <xs:element name="gia" type="xs:decimal"/>
+              <xs:element name="so_luong_ton" type="xs:integer"/>
+              <xs:element name="tu_san_xuat" type="xs:boolean"/>
+              <xs:element name="trang_thai" type="xs:string" minOccurs="0"/>
+              <xs:element name="ma_thuong_hieu" type="xs:string" minOccurs="0"/>
+              <xs:element name="ma_danh_muc" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ========== TON KHO ========== -->
+        <xs:element name="TonKho" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_ton_kho" type="xs:string"/>
+              <xs:element name="so_luong_ton" type="xs:integer"/>
+              <xs:element name="ngay_cap_nhat" type="xs:date"/>
+              <xs:element name="ma_san_pham" type="xs:string"/>
+              <xs:element name="ma_nha_cung_cap" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ========== NHA CUNG CAP ========== -->
+        <xs:element name="NhaCungCap" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_nha_cung_cap" type="xs:string"/>
+              <xs:element name="ten_nha_cung_cap" type="xs:string"/>
+              <xs:element name="nguoi_lien_he" type="xs:string" minOccurs="0"/>
+              <xs:element name="email" type="xs:string"/>
+              <xs:element name="dien_thoai" type="xs:string"/>
+              <xs:element name="dia_chi" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ========== DANH MUC ========== -->
+        <xs:element name="DanhMuc" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_danh_muc" type="xs:string"/>
+              <xs:element name="ten_danh_muc" type="xs:string"/>
+              <xs:element name="mo_ta" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ========== THANH TOAN ========== -->
+        <xs:element name="ThanhToan" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_thanh_toan" type="xs:string"/>
+              <xs:element name="ngay_thanh_toan" type="xs:date"/>
+              <xs:element name="so_tien" type="xs:decimal"/>
+              <xs:element name="phuong_thuc" type="xs:string"/>
+              <xs:element name="ma_don_hang" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ========== NGUYEN LIEU ========== -->
+        <xs:element name="NguyenLieu" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_nguyen_lieu" type="xs:string"/>
+              <xs:element name="ten_nguyen_lieu" type="xs:string"/>
+              <xs:element name="loai" type="xs:string" minOccurs="0"/>
+              <xs:element name="so_luong_ton" type="xs:decimal"/>
+              <xs:element name="don_vi" type="xs:string"/>
+              <xs:element name="gia" type="xs:decimal"/>
+              <xs:element name="ma_nha_cung_cap" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- ========== SAN PHAM - NGUYEN LIEU ========== -->
+        <xs:element name="SanPhamNguyenLieu" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma_san_pham_nguyen_lieu" type="xs:string"/>
+              <xs:element name="ma_san_pham" type="xs:string"/>
+              <xs:element name="ma_nguyen_lieu" type="xs:string"/>
+              <xs:element name="so_luong" type="xs:decimal"/>
+              <xs:element name="don_vi" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+
+    <!-- ======= PRIMARY KEYS ======= -->
+    <xs:key name="PK_KhachHang"><xs:selector xpath="KhachHang"/><xs:field xpath="ma_khach_hang"/></xs:key>
+    <xs:key name="PK_NhanVien"><xs:selector xpath="NhanVien"/><xs:field xpath="ma_nhan_vien"/></xs:key>
+    <xs:key name="PK_DonHang"><xs:selector xpath="DonHang"/><xs:field xpath="ma_don_hang"/></xs:key>
+    <xs:key name="PK_SanPham"><xs:selector xpath="SanPham"/><xs:field xpath="ma_san_pham"/></xs:key>
+    <xs:key name="PK_NhaCungCap"><xs:selector xpath="NhaCungCap"/><xs:field xpath="ma_nha_cung_cap"/></xs:key>
+    <xs:key name="PK_DanhMuc"><xs:selector xpath="DanhMuc"/><xs:field xpath="ma_danh_muc"/></xs:key>
+    <xs:key name="PK_ThanhToan"><xs:selector xpath="ThanhToan"/><xs:field xpath="ma_thanh_toan"/></xs:key>
+    <xs:key name="PK_NguyenLieu"><xs:selector xpath="NguyenLieu"/><xs:field xpath="ma_nguyen_lieu"/></xs:key>
+    <xs:key name="PK_TonKho"><xs:selector xpath="TonKho"/><xs:field xpath="ma_ton_kho"/></xs:key>
+    <xs:key name="PK_DHNV"><xs:selector xpath="DonHangNhanVien"/><xs:field xpath="ma_don_hang_nhan_vien"/></xs:key>
+    <xs:key name="PK_CT"><xs:selector xpath="ChiTietDonHang"/><xs:field xpath="ma_chi_tiet_don_hang"/></xs:key>
+    <xs:key name="PK_SPNL"><xs:selector xpath="SanPhamNguyenLieu"/><xs:field xpath="ma_san_pham_nguyen_lieu"/></xs:key>
+
+    <!-- ======= FOREIGN KEYS ======= -->
+    <xs:keyref name="FK_DonHang_KhachHang" refer="PK_KhachHang">
+      <xs:selector xpath="DonHang"/><xs:field xpath="ma_khach_hang"/>
+    </xs:keyref>
+
+    <xs:keyref name="FK_DHNV_DonHang" refer="PK_DonHang">
+      <xs:selector xpath="DonHangNhanVien"/><xs:field xpath="ma_don_hang"/>
+    </xs:keyref>
+    <xs:keyref name="FK_DHNV_NhanVien" refer="PK_NhanVien">
+      <xs:selector xpath="DonHangNhanVien"/><xs:field xpath="ma_nhan_vien"/>
+    </xs:keyref>
+
+    <xs:keyref name="FK_CT_DonHang" refer="PK_DonHang">
+      <xs:selector xpath="ChiTietDonHang"/><xs:field xpath="ma_don_hang"/>
+    </xs:keyref>
+    <xs:keyref name="FK_CT_SanPham" refer="PK_SanPham">
+      <xs:selector xpath="ChiTietDonHang"/><xs:field xpath="ma_san_pham"/>
+    </xs:keyref>
+
+    <xs:keyref name="FK_SanPham_DanhMuc" refer="PK_DanhMuc">
+      <xs:selector xpath="SanPham"/><xs:field xpath="ma_danh_muc"/>
+    </xs:keyref>
+
+    <xs:keyref name="FK_TonKho_SanPham" refer="PK_SanPham">
+      <xs:selector xpath="TonKho"/><xs:field xpath="ma_san_pham"/>
+    </xs:keyref>
+    <xs:keyref name="FK_TonKho_NhaCungCap" refer="PK_NhaCungCap">
+      <xs:selector xpath="TonKho"/><xs:field xpath="ma_nha_cung_cap"/>
+    </xs:keyref>
+
+    <xs:keyref name="FK_ThanhToan_DonHang" refer="PK_DonHang">
+      <xs:selector xpath="ThanhToan"/><xs:field xpath="ma_don_hang"/>
+    </xs:keyref>
+
+    <xs:keyref name="FK_NguyenLieu_NhaCungCap" refer="PK_NhaCungCap">
+      <xs:selector xpath="NguyenLieu"/><xs:field xpath="ma_nha_cung_cap"/>
+    </xs:keyref>
+
+    <xs:keyref name="FK_SPNL_SanPham" refer="PK_SanPham">
+      <xs:selector xpath="SanPhamNguyenLieu"/><xs:field xpath="ma_san_pham"/>
+    </xs:keyref>
+    <xs:keyref name="FK_SPNL_NguyenLieu" refer="PK_NguyenLieu">
+      <xs:selector xpath="SanPhamNguyenLieu"/><xs:field xpath="ma_nguyen_lieu"/>
+    </xs:keyref>
+
+  </xs:element>
+</xs:schema>

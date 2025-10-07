@@ -1,0 +1,91 @@
+<!ELEMENT TailorTrackSystem (
+  KhachHang+, NhanVien+, DonHang+, DonHangNhanVien+, ChiTietDonHang+,
+  SanPham+, TonKho+, NhaCungCap+, DanhMuc+, ThanhToan+, NguyenLieu+, SanPhamNguyenLieu+
+)>
+
+<!-- ===== KhachHang ===== -->
+<!ELEMENT KhachHang (ma_khach_hang, ho_ten, email, so_dien_thoai, dia_chi, ngay_dang_ky, diem_tich_luy)>
+
+<!-- ===== NhanVien ===== -->
+<!ELEMENT NhanVien (ma_nhan_vien, ho_ten, email, so_dien_thoai, chuc_vu, luong, ngay_tuyen)>
+
+<!-- ===== DonHang ===== -->
+<!ELEMENT DonHang (ma_don_hang, ngay_dat, tong_tien, trang_thai, ma_khach_hang, mo_ta_yeu_cau?)>
+
+<!-- ===== DonHangNhanVien ===== -->
+<!ELEMENT DonHangNhanVien (ma_don_hang_nhan_vien, ma_don_hang, ma_nhan_vien, vai_tro, ghi_chu?)>
+
+<!-- ===== ChiTietDonHang ===== -->
+<!ELEMENT ChiTietDonHang (ma_chi_tiet_don_hang, so_luong, gia_don_vi, ma_don_hang, ma_san_pham, loai_san_pham?, trang_thai?, mo_ta?)>
+
+<!-- ===== SanPham ===== -->
+<!ELEMENT SanPham (ma_san_pham, ten_san_pham, mo_ta?, kich_co?, mau_sac?, gia, so_luong_ton, tu_san_xuat, trang_thai?, ma_thuong_hieu?, ma_danh_muc)>
+
+<!-- ===== TonKho ===== -->
+<!ELEMENT TonKho (ma_ton_kho, so_luong_ton, ngay_cap_nhat, ma_san_pham, ma_nha_cung_cap)>
+
+<!-- ===== NhaCungCap ===== -->
+<!ELEMENT NhaCungCap (ma_nha_cung_cap, ten_nha_cung_cap, nguoi_lien_he?, email, dien_thoai, dia_chi)>
+
+<!-- ===== DanhMuc ===== -->
+<!ELEMENT DanhMuc (ma_danh_muc, ten_danh_muc, mo_ta?)>
+
+<!-- ===== ThanhToan ===== -->
+<!ELEMENT ThanhToan (ma_thanh_toan, ngay_thanh_toan, so_tien, phuong_thuc, ma_don_hang)>
+
+<!-- ===== NguyenLieu ===== -->
+<!ELEMENT NguyenLieu (ma_nguyen_lieu, ten_nguyen_lieu, loai?, so_luong_ton, don_vi, gia, ma_nha_cung_cap)>
+
+<!-- ===== SanPhamNguyenLieu ===== -->
+<!ELEMENT SanPhamNguyenLieu (ma_san_pham_nguyen_lieu, ma_san_pham, ma_nguyen_lieu, so_luong, don_vi)>
+
+<!-- ===== CÁC PHẦN TỬ LÁ ===== -->
+<!ELEMENT ma_khach_hang (#PCDATA)>
+<!ELEMENT ho_ten (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT so_dien_thoai (#PCDATA)>
+<!ELEMENT dia_chi (#PCDATA)>
+<!ELEMENT ngay_dang_ky (#PCDATA)>
+<!ELEMENT diem_tich_luy (#PCDATA)>
+<!ELEMENT ma_nhan_vien (#PCDATA)>
+<!ELEMENT chuc_vu (#PCDATA)>
+<!ELEMENT luong (#PCDATA)>
+<!ELEMENT ngay_tuyen (#PCDATA)>
+<!ELEMENT ma_don_hang (#PCDATA)>
+<!ELEMENT ngay_dat (#PCDATA)>
+<!ELEMENT tong_tien (#PCDATA)>
+<!ELEMENT trang_thai (#PCDATA)>
+<!ELEMENT mo_ta_yeu_cau (#PCDATA)>
+<!ELEMENT ma_don_hang_nhan_vien (#PCDATA)>
+<!ELEMENT vai_tro (#PCDATA)>
+<!ELEMENT ghi_chu (#PCDATA)>
+<!ELEMENT ma_chi_tiet_don_hang (#PCDATA)>
+<!ELEMENT so_luong (#PCDATA)>
+<!ELEMENT gia_don_vi (#PCDATA)>
+<!ELEMENT loai_san_pham (#PCDATA)>
+<!ELEMENT mo_ta (#PCDATA)>
+<!ELEMENT ma_san_pham (#PCDATA)>
+<!ELEMENT ten_san_pham (#PCDATA)>
+<!ELEMENT kich_co (#PCDATA)>
+<!ELEMENT mau_sac (#PCDATA)>
+<!ELEMENT gia (#PCDATA)>
+<!ELEMENT so_luong_ton (#PCDATA)>
+<!ELEMENT tu_san_xuat (#PCDATA)>
+<!ELEMENT ma_thuong_hieu (#PCDATA)>
+<!ELEMENT ma_danh_muc (#PCDATA)>
+<!ELEMENT ma_ton_kho (#PCDATA)>
+<!ELEMENT ngay_cap_nhat (#PCDATA)>
+<!ELEMENT ma_nha_cung_cap (#PCDATA)>
+<!ELEMENT ten_nha_cung_cap (#PCDATA)>
+<!ELEMENT nguoi_lien_he (#PCDATA)>
+<!ELEMENT dien_thoai (#PCDATA)>
+<!ELEMENT ten_danh_muc (#PCDATA)>
+<!ELEMENT ma_thanh_toan (#PCDATA)>
+<!ELEMENT ngay_thanh_toan (#PCDATA)>
+<!ELEMENT so_tien (#PCDATA)>
+<!ELEMENT phuong_thuc (#PCDATA)>
+<!ELEMENT ma_nguyen_lieu (#PCDATA)>
+<!ELEMENT ten_nguyen_lieu (#PCDATA)>
+<!ELEMENT loai (#PCDATA)>
+<!ELEMENT don_vi (#PCDATA)>
+<!ELEMENT ma_san_pham_nguyen_lieu (#PCDATA)>
