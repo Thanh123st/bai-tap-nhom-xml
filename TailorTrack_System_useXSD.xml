@@ -4,523 +4,775 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.ctut.edu.vn/material TailorTrack_System.xsd">
 
-  <!-- ===== KhachHang (5) ===== -->
-  <KhachHang>
-    <ma_khach_hang>KH001</ma_khach_hang>
-    <ho_ten>Nguyen Van A</ho_ten>
-    <email>a.kh@example.com</email>
-    <so_dien_thoai>0901000001</so_dien_thoai>
-    <dia_chi>Ninh Kieu, Can Tho</dia_chi>
-    <ngay_dang_ky>2025-01-05</ngay_dang_ky>
-    <diem_tich_luy>120</diem_tich_luy>
-  </KhachHang>
-  <KhachHang>
-    <ma_khach_hang>KH002</ma_khach_hang>
-    <ho_ten>Tran Thi B</ho_ten>
-    <email>b.tran@example.com</email>
-    <so_dien_thoai>0902000002</so_dien_thoai>
-    <dia_chi>Cai Rang, Can Tho</dia_chi>
-    <ngay_dang_ky>2025-02-12</ngay_dang_ky>
-    <diem_tich_luy>80</diem_tich_luy>
-  </KhachHang>
-  <KhachHang>
-    <ma_khach_hang>KH003</ma_khach_hang>
-    <ho_ten>Le Minh C</ho_ten>
-    <email>c.le@example.com</email>
-    <so_dien_thoai>0903000003</so_dien_thoai>
-    <dia_chi>Long Xuyen, An Giang</dia_chi>
-    <ngay_dang_ky>2025-03-01</ngay_dang_ky>
-    <diem_tich_luy>45</diem_tich_luy>
-  </KhachHang>
-  <KhachHang>
-    <ma_khach_hang>KH004</ma_khach_hang>
-    <ho_ten>Pham D</ho_ten>
-    <email>d.pham@example.com</email>
-    <so_dien_thoai>0904000004</so_dien_thoai>
-    <dia_chi>Thot Not, Can Tho</dia_chi>
-    <ngay_dang_ky>2025-03-20</ngay_dang_ky>
-    <diem_tich_luy>10</diem_tich_luy>
-  </KhachHang>
-  <KhachHang>
-    <ma_khach_hang>KH005</ma_khach_hang>
-    <ho_ten>Vo E</ho_ten>
-    <email>e.vo@example.com</email>
-    <so_dien_thoai>0905000005</so_dien_thoai>
-    <dia_chi>Vinh Long</dia_chi>
-    <ngay_dang_ky>2025-04-02</ngay_dang_ky>
-    <diem_tich_luy>5</diem_tich_luy>
-  </KhachHang>
+  <KhachHangs>
+    <KhachHang>
+      <ma_khach_hang>KH001</ma_khach_hang>
+      <ho_ten>Nguyen Van A</ho_ten>
+      <email>a.kh@example.com</email>
+      <so_dien_thoai>0901000001</so_dien_thoai>
+      <dia_chi>Ninh Kieu, Can Tho</dia_chi>
+      <ngay_dang_ky>2025-01-05</ngay_dang_ky>
+      <diem_tich_luy>120</diem_tich_luy>
+    </KhachHang>
 
-  <!-- ===== NhanVien (5) ===== -->
-  <NhanVien>
-    <ma_nhan_vien>NV001</ma_nhan_vien>
-    <ho_ten>Nguyen Admin</ho_ten>
-    <email>nv001@example.com</email>
-    <so_dien_thoai>0911000001</so_dien_thoai>
-    <chuc_vu>Quan ly</chuc_vu>
-    <luong>15000000.00</luong>
-    <ngay_tuyen>2024-06-01</ngay_tuyen>
-  </NhanVien>
-  <NhanVien>
-    <ma_nhan_vien>NV002</ma_nhan_vien>
-    <ho_ten>Tran Seller</ho_ten>
-    <email>nv002@example.com</email>
-    <so_dien_thoai>0911000002</so_dien_thoai>
-    <chuc_vu>Ban hang</chuc_vu>
-    <luong>9000000.00</luong>
-    <ngay_tuyen>2024-09-10</ngay_tuyen>
-  </NhanVien>
-  <NhanVien>
-    <ma_nhan_vien>NV003</ma_nhan_vien>
-    <ho_ten>Le Store</ho_ten>
-    <email>nv003@example.com</email>
-    <so_dien_thoai>0911000003</so_dien_thoai>
-    <chuc_vu>Kho</chuc_vu>
-    <luong>8000000.00</luong>
-    <ngay_tuyen>2025-01-15</ngay_tuyen>
-  </NhanVien>
-  <NhanVien>
-    <ma_nhan_vien>NV004</ma_nhan_vien>
-    <ho_ten>Pham Cashier</ho_ten>
-    <email>nv004@example.com</email>
-    <so_dien_thoai>0911000004</so_dien_thoai>
-    <chuc_vu>Thu ngan</chuc_vu>
-    <luong>8500000.00</luong>
-    <ngay_tuyen>2025-03-05</ngay_tuyen>
-  </NhanVien>
-  <NhanVien>
-    <ma_nhan_vien>NV005</ma_nhan_vien>
-    <ho_ten>Vo Support</ho_ten>
-    <email>nv005@example.com</email>
-    <so_dien_thoai>0911000005</so_dien_thoai>
-    <chuc_vu>CSKH</chuc_vu>
-    <luong>7800000.00</luong>
-    <ngay_tuyen>2025-04-01</ngay_tuyen>
-  </NhanVien>
+    <KhachHang>
+      <ma_khach_hang>KH002</ma_khach_hang>
+      <ho_ten>Tran Thi B</ho_ten>
+      <email>b.tran@example.com</email>
+      <so_dien_thoai>0902000002</so_dien_thoai>
+      <dia_chi>Cai Rang, Can Tho</dia_chi>
+      <ngay_dang_ky>2025-02-12</ngay_dang_ky>
+      <diem_tich_luy>80</diem_tich_luy>
+    </KhachHang>
 
-  <!-- ===== DonHang (5) — FK -> KhachHang ===== -->
-  <DonHang>
-    <ma_don_hang>DH001</ma_don_hang>
-    <ngay_dat>2025-10-01</ngay_dat>
-    <tong_tien>113000.00</tong_tien>
-    <trang_thai>paid</trang_thai>
-    <ma_khach_hang>KH001</ma_khach_hang>
-    <mo_ta_yeu_cau>It da</mo_ta_yeu_cau>
-  </DonHang>
-  <DonHang>
-    <ma_don_hang>DH002</ma_don_hang>
-    <ngay_dat>2025-10-01</ngay_dat>
-    <tong_tien>93000.00</tong_tien>
-    <trang_thai>paid</trang_thai>
-    <ma_khach_hang>KH002</ma_khach_hang>
-    <mo_ta_yeu_cau>Giao nhanh</mo_ta_yeu_cau>
-  </DonHang>
-  <DonHang>
-    <ma_don_hang>DH003</ma_don_hang>
-    <ngay_dat>2025-10-02</ngay_dat>
-    <tong_tien>65000.00</tong_tien>
-    <trang_thai>pending</trang_thai>
-    <ma_khach_hang>KH003</ma_khach_hang>
-    <mo_ta_yeu_cau/>
-  </DonHang>
-  <DonHang>
-    <ma_don_hang>DH004</ma_don_hang>
-    <ngay_dat>2025-10-02</ngay_dat>
-    <tong_tien>80500.00</tong_tien>
-    <trang_thai>paid</trang_thai>
-    <ma_khach_hang>KH004</ma_khach_hang>
-    <mo_ta_yeu_cau>Không cay</mo_ta_yeu_cau>
-  </DonHang>
-  <DonHang>
-    <ma_don_hang>DH005</ma_don_hang>
-    <ngay_dat>2025-10-03</ngay_dat>
-    <tong_tien>118000.00</tong_tien>
-    <trang_thai>paid</trang_thai>
-    <ma_khach_hang>KH005</ma_khach_hang>
-    <mo_ta_yeu_cau/>
-  </DonHang>
+    <KhachHang>
+      <ma_khach_hang>KH003</ma_khach_hang>
+      <ho_ten>Le Minh C</ho_ten>
+      <email>c.le@example.com</email>
+      <so_dien_thoai>0903000003</so_dien_thoai>
+      <dia_chi>Long Xuyen, An Giang</dia_chi>
+      <ngay_dang_ky>2025-03-01</ngay_dang_ky>
+      <diem_tich_luy>45</diem_tich_luy>
+    </KhachHang>
 
-  <!-- ===== DonHangNhanVien (5) — FK -> DonHang, NhanVien ===== -->
-  <DonHangNhanVien>
-    <ma_don_hang_nhan_vien>DHNV001</ma_don_hang_nhan_vien>
-    <ma_don_hang>DH001</ma_don_hang>
-    <ma_nhan_vien>NV002</ma_nhan_vien>
-    <vai_tro>Ban hang</vai_tro>
-    <ghi_chu/>
-  </DonHangNhanVien>
-  <DonHangNhanVien>
-    <ma_don_hang_nhan_vien>DHNV002</ma_don_hang_nhan_vien>
-    <ma_don_hang>DH001</ma_don_hang>
-    <ma_nhan_vien>NV004</ma_nhan_vien>
-    <vai_tro>Thu ngan</vai_tro>
-    <ghi_chu/>
-  </DonHangNhanVien>
-  <DonHangNhanVien>
-    <ma_don_hang_nhan_vien>DHNV003</ma_don_hang_nhan_vien>
-    <ma_don_hang>DH002</ma_don_hang>
-    <ma_nhan_vien>NV002</ma_nhan_vien>
-    <vai_tro>Ban hang</vai_tro>
-    <ghi_chu/>
-  </DonHangNhanVien>
-  <DonHangNhanVien>
-    <ma_don_hang_nhan_vien>DHNV004</ma_don_hang_nhan_vien>
-    <ma_don_hang>DH004</ma_don_hang>
-    <ma_nhan_vien>NV004</ma_nhan_vien>
-    <vai_tro>Thu ngan</vai_tro>
-    <ghi_chu/>
-  </DonHangNhanVien>
-  <DonHangNhanVien>
-    <ma_don_hang_nhan_vien>DHNV005</ma_don_hang_nhan_vien>
-    <ma_don_hang>DH005</ma_don_hang>
-    <ma_nhan_vien>NV002</ma_nhan_vien>
-    <vai_tro>Ban hang</vai_tro>
-    <ghi_chu/>
-  </DonHangNhanVien>
+    <KhachHang>
+      <ma_khach_hang>KH004</ma_khach_hang>
+      <ho_ten>Pham D</ho_ten>
+      <email>d.pham@example.com</email>
+      <so_dien_thoai>0904000004</so_dien_thoai>
+      <dia_chi>Thot Not, Can Tho</dia_chi>
+      <ngay_dang_ky>2025-03-20</ngay_dang_ky>
+      <diem_tich_luy>10</diem_tich_luy>
+    </KhachHang>
 
-  <!-- ===== ChiTietDonHang (5) — FK -> DonHang, SanPham ===== -->
-  <ChiTietDonHang>
-    <ma_chi_tiet_don_hang>CT001</ma_chi_tiet_don_hang>
-    <so_luong>1</so_luong>
-    <gia_don_vi>65000.00</gia_don_vi>
-    <ma_don_hang>DH001</ma_don_hang>
-    <ma_san_pham>SP003</ma_san_pham>
-    <loai_san_pham>food</loai_san_pham>
-    <trang_thai>done</trang_thai>
-    <mo_ta/>
-  </ChiTietDonHang>
-  <ChiTietDonHang>
-    <ma_chi_tiet_don_hang>CT002</ma_chi_tiet_don_hang>
-    <so_luong>1</so_luong>
-    <gia_don_vi>25000.00</gia_don_vi>
-    <ma_don_hang>DH001</ma_don_hang>
-    <ma_san_pham>SP001</ma_san_pham>
-    <loai_san_pham>drink</loai_san_pham>
-    <trang_thai>done</trang_thai>
-    <mo_ta/>
-  </ChiTietDonHang>
-  <ChiTietDonHang>
-    <ma_chi_tiet_don_hang>CT003</ma_chi_tiet_don_hang>
-    <so_luong>1</so_luong>
-    <gia_don_vi>28000.00</gia_don_vi>
-    <ma_don_hang>DH002</ma_don_hang>
-    <ma_san_pham>SP002</ma_san_pham>
-    <loai_san_pham>drink</loai_san_pham>
-    <trang_thai>done</trang_thai>
-    <mo_ta/>
-  </ChiTietDonHang>
-  <ChiTietDonHang>
-    <ma_chi_tiet_don_hang>CT004</ma_chi_tiet_don_hang>
-    <so_luong>1</so_luong>
-    <gia_don_vi>55000.00</gia_don_vi>
-    <ma_don_hang>DH004</ma_don_hang>
-    <ma_san_pham>SP004</ma_san_pham>
-    <loai_san_pham>food</loai_san_pham>
-    <trang_thai>done</trang_thai>
-    <mo_ta/>
-  </ChiTietDonHang>
-  <ChiTietDonHang>
-    <ma_chi_tiet_don_hang>CT005</ma_chi_tiet_don_hang>
-    <so_luong>1</so_luong>
-    <gia_don_vi>88000.00</gia_don_vi>
-    <ma_don_hang>DH005</ma_don_hang>
-    <ma_san_pham>SP005</ma_san_pham>
-    <loai_san_pham>combo</loai_san_pham>
-    <trang_thai>done</trang_thai>
-    <mo_ta/>
-  </ChiTietDonHang>
+    <KhachHang>
+      <ma_khach_hang>KH005</ma_khach_hang>
+      <ho_ten>Vo E</ho_ten>
+      <email>e.vo@example.com</email>
+      <so_dien_thoai>0905000005</so_dien_thoai>
+      <dia_chi>Vinh Long</dia_chi>
+      <ngay_dang_ky>2025-04-02</ngay_dang_ky>
+      <diem_tich_luy>5</diem_tich_luy>
+    </KhachHang>
 
+    <!-- KH006 - thêm mới -->
+    <KhachHang>
+      <ma_khach_hang>KH006</ma_khach_hang>
+      <ho_ten>Nguyen Thi F</ho_ten>
+      <email>f.nguyen@example.com</email>
+      <so_dien_thoai>0906000006</so_dien_thoai>
+      <dia_chi>Soc Trang</dia_chi>
+      <ngay_dang_ky>2025-05-10</ngay_dang_ky>
+      <diem_tich_luy>65</diem_tich_luy>
+    </KhachHang>
+
+    <!-- KH007 - thêm mới -->
+    <KhachHang>
+      <ma_khach_hang>KH007</ma_khach_hang>
+      <ho_ten>Tran Quoc G</ho_ten>
+      <email>g.tran@example.com</email>
+      <so_dien_thoai>0907000007</so_dien_thoai>
+      <dia_chi>Can Gio, TP.HCM</dia_chi>
+      <ngay_dang_ky>2025-06-15</ngay_dang_ky>
+      <diem_tich_luy>95</diem_tich_luy>
+    </KhachHang>
+  </KhachHangs>
+
+
+  <!-- ===== NhanVien (7) ===== -->
+  <NhanViens>
+    <NhanVien>
+      <ma_nhan_vien>NV001</ma_nhan_vien>
+      <ho_ten>Nguyen Admin</ho_ten>
+      <email>nv001@example.com</email>
+      <so_dien_thoai>0911000001</so_dien_thoai>
+      <chuc_vu>Quan ly</chuc_vu>
+      <luong>15000000.00</luong>
+      <ngay_tuyen>2024-06-01</ngay_tuyen>
+    </NhanVien>
+    <NhanVien>
+      <ma_nhan_vien>NV002</ma_nhan_vien>
+      <ho_ten>Tran Seller</ho_ten>
+      <email>nv002@example.com</email>
+      <so_dien_thoai>0911000002</so_dien_thoai>
+      <chuc_vu>Ban hang</chuc_vu>
+      <luong>9000000.00</luong>
+      <ngay_tuyen>2024-09-10</ngay_tuyen>
+    </NhanVien>
+    <NhanVien>
+      <ma_nhan_vien>NV003</ma_nhan_vien>
+      <ho_ten>Le Store</ho_ten>
+      <email>nv003@example.com</email>
+      <so_dien_thoai>0911000003</so_dien_thoai>
+      <chuc_vu>Kho</chuc_vu>
+      <luong>8000000.00</luong>
+      <ngay_tuyen>2025-01-15</ngay_tuyen>
+    </NhanVien>
+    <NhanVien>
+      <ma_nhan_vien>NV004</ma_nhan_vien>
+      <ho_ten>Pham Cashier</ho_ten>
+      <email>nv004@example.com</email>
+      <so_dien_thoai>0911000004</so_dien_thoai>
+      <chuc_vu>Thu ngan</chuc_vu>
+      <luong>8500000.00</luong>
+      <ngay_tuyen>2025-03-05</ngay_tuyen>
+    </NhanVien>
+    <NhanVien>
+      <ma_nhan_vien>NV005</ma_nhan_vien>
+      <ho_ten>Vo Support</ho_ten>
+      <email>nv005@example.com</email>
+      <so_dien_thoai>0911000005</so_dien_thoai>
+      <chuc_vu>CSKH</chuc_vu>
+      <luong>7800000.00</luong>
+      <ngay_tuyen>2025-04-01</ngay_tuyen>
+    </NhanVien>
+    <NhanVien>
+      <ma_nhan_vien>NV006</ma_nhan_vien>
+      <ho_ten>Nguyen Store</ho_ten>
+      <email>nv006@example.com</email>
+      <so_dien_thoai>0911000006</so_dien_thoai>
+      <chuc_vu>Kho</chuc_vu>
+      <luong>8000000.00</luong>
+      <ngay_tuyen>2025-05-15</ngay_tuyen>
+    </NhanVien>
+    <NhanVien>
+      <ma_nhan_vien>NV007</ma_nhan_vien>
+      <ho_ten>Pham Cashier</ho_ten>
+      <email>nv007@example.com</email>
+      <so_dien_thoai>0911000007</so_dien_thoai>
+      <chuc_vu>Thu ngan</chuc_vu>
+      <luong>8500000.00</luong>
+      <ngay_tuyen>2025-06-05</ngay_tuyen>
+    </NhanVien>
+  </NhanViens>
+
+  <!-- ===== DonHang (7) — FK -> KhachHang ===== -->
+  <DonHangs>
+    <DonHang>
+      <ma_don_hang>DH001</ma_don_hang>
+      <ngay_dat>2025-10-01</ngay_dat>
+      <tong_tien>113000.00</tong_tien>
+      <trang_thai>paid</trang_thai>
+      <ma_khach_hang>KH001</ma_khach_hang>
+      <mo_ta_yeu_cau>It da</mo_ta_yeu_cau>
+    </DonHang>
+    <DonHang>
+      <ma_don_hang>DH002</ma_don_hang>
+      <ngay_dat>2025-10-01</ngay_dat>
+      <tong_tien>93000.00</tong_tien>
+      <trang_thai>paid</trang_thai>
+      <ma_khach_hang>KH002</ma_khach_hang>
+      <mo_ta_yeu_cau>Giao nhanh</mo_ta_yeu_cau>
+    </DonHang>
+    <DonHang>
+      <ma_don_hang>DH003</ma_don_hang>
+      <ngay_dat>2025-10-02</ngay_dat>
+      <tong_tien>65000.00</tong_tien>
+      <trang_thai>pending</trang_thai>
+      <ma_khach_hang>KH003</ma_khach_hang>
+      <mo_ta_yeu_cau/>
+    </DonHang>
+    <DonHang>
+      <ma_don_hang>DH004</ma_don_hang>
+      <ngay_dat>2025-10-02</ngay_dat>
+      <tong_tien>80500.00</tong_tien>
+      <trang_thai>paid</trang_thai>
+      <ma_khach_hang>KH004</ma_khach_hang>
+      <mo_ta_yeu_cau>Không cay</mo_ta_yeu_cau>
+    </DonHang>
+    <DonHang>
+      <ma_don_hang>DH005</ma_don_hang>
+      <ngay_dat>2025-10-03</ngay_dat>
+      <tong_tien>118000.00</tong_tien>
+      <trang_thai>paid</trang_thai>
+      <ma_khach_hang>KH005</ma_khach_hang>
+      <mo_ta_yeu_cau/>
+    </DonHang>
+    <DonHang>
+      <ma_don_hang>DH006</ma_don_hang>
+      <ngay_dat>2025-10-04</ngay_dat>
+      <tong_tien>118000.00</tong_tien>
+      <trang_thai>paid</trang_thai>
+      <ma_khach_hang>KH006</ma_khach_hang>
+      <mo_ta_yeu_cau/>
+    </DonHang>
+    <DonHang>
+      <ma_don_hang>DH007</ma_don_hang>
+      <ngay_dat>2025-10-05</ngay_dat>
+      <tong_tien>118000.00</tong_tien>
+      <trang_thai>paid</trang_thai>
+      <ma_khach_hang>KH007</ma_khach_hang>
+      <mo_ta_yeu_cau/>
+    </DonHang>
+  </DonHangs>
+
+  <!-- ===== DonHangNhanVien (7) — FK -> DonHang, NhanVien ===== -->
+  <DonHangNhanViens>
+    <DonHangNhanVien>
+      <ma_don_hang_nhan_vien>DHNV001</ma_don_hang_nhan_vien>
+      <ma_don_hang>DH001</ma_don_hang>
+      <ma_nhan_vien>NV002</ma_nhan_vien>
+      <vai_tro>Ban hang</vai_tro>
+      <ghi_chu/>
+    </DonHangNhanVien>
+    <DonHangNhanVien>
+      <ma_don_hang_nhan_vien>DHNV002</ma_don_hang_nhan_vien>
+      <ma_don_hang>DH001</ma_don_hang>
+      <ma_nhan_vien>NV004</ma_nhan_vien>
+      <vai_tro>Thu ngan</vai_tro>
+      <ghi_chu/>
+    </DonHangNhanVien>
+    <DonHangNhanVien>
+      <ma_don_hang_nhan_vien>DHNV003</ma_don_hang_nhan_vien>
+      <ma_don_hang>DH002</ma_don_hang>
+      <ma_nhan_vien>NV002</ma_nhan_vien>
+      <vai_tro>Ban hang</vai_tro>
+      <ghi_chu/>
+    </DonHangNhanVien>
+    <DonHangNhanVien>
+      <ma_don_hang_nhan_vien>DHNV004</ma_don_hang_nhan_vien>
+      <ma_don_hang>DH004</ma_don_hang>
+      <ma_nhan_vien>NV004</ma_nhan_vien>
+      <vai_tro>Thu ngan</vai_tro>
+      <ghi_chu/>
+    </DonHangNhanVien>
+    <DonHangNhanVien>
+      <ma_don_hang_nhan_vien>DHNV005</ma_don_hang_nhan_vien>
+      <ma_don_hang>DH005</ma_don_hang>
+      <ma_nhan_vien>NV002</ma_nhan_vien>
+      <vai_tro>Ban hang</vai_tro>
+      <ghi_chu/>
+    </DonHangNhanVien>
+    <DonHangNhanVien>
+      <ma_don_hang_nhan_vien>DHNV006</ma_don_hang_nhan_vien>
+      <ma_don_hang>DH006</ma_don_hang>
+      <ma_nhan_vien>NV006</ma_nhan_vien>
+      <vai_tro>Kho</vai_tro>
+      <ghi_chu/>
+    </DonHangNhanVien>
+    <DonHangNhanVien>
+      <ma_don_hang_nhan_vien>DHNV007</ma_don_hang_nhan_vien>
+      <ma_don_hang>DH007</ma_don_hang>
+      <ma_nhan_vien>NV007</ma_nhan_vien>
+      <vai_tro>Thu ngan</vai_tro>
+      <ghi_chu/>
+    </DonHangNhanVien>
+  </DonHangNhanViens>
+  <!-- ===== ChiTietDonHang (7) — FK -> DonHang, SanPham ===== -->
+  <ChiTietDonHangs>
+    <ChiTietDonHang>
+      <ma_chi_tiet_don_hang>CT001</ma_chi_tiet_don_hang>
+      <so_luong>1</so_luong>
+      <gia_don_vi>65000.00</gia_don_vi>
+      <ma_don_hang>DH001</ma_don_hang>
+      <ma_san_pham>SP003</ma_san_pham>
+      <loai_san_pham>food</loai_san_pham>
+      <trang_thai>done</trang_thai>
+      <mo_ta/>
+    </ChiTietDonHang>
+    <ChiTietDonHang>
+      <ma_chi_tiet_don_hang>CT002</ma_chi_tiet_don_hang>
+      <so_luong>1</so_luong>
+      <gia_don_vi>25000.00</gia_don_vi>
+      <ma_don_hang>DH001</ma_don_hang>
+      <ma_san_pham>SP001</ma_san_pham>
+      <loai_san_pham>drink</loai_san_pham>
+      <trang_thai>done</trang_thai>
+      <mo_ta/>
+    </ChiTietDonHang>
+    <ChiTietDonHang>
+      <ma_chi_tiet_don_hang>CT003</ma_chi_tiet_don_hang>
+      <so_luong>1</so_luong>
+      <gia_don_vi>28000.00</gia_don_vi>
+      <ma_don_hang>DH002</ma_don_hang>
+      <ma_san_pham>SP002</ma_san_pham>
+      <loai_san_pham>drink</loai_san_pham>
+      <trang_thai>done</trang_thai>
+      <mo_ta/>
+    </ChiTietDonHang>
+    <ChiTietDonHang>
+      <ma_chi_tiet_don_hang>CT004</ma_chi_tiet_don_hang>
+      <so_luong>1</so_luong>
+      <gia_don_vi>55000.00</gia_don_vi>
+      <ma_don_hang>DH004</ma_don_hang>
+      <ma_san_pham>SP004</ma_san_pham>
+      <loai_san_pham>food</loai_san_pham>
+      <trang_thai>done</trang_thai>
+      <mo_ta/>
+    </ChiTietDonHang>
+    <ChiTietDonHang>
+      <ma_chi_tiet_don_hang>CT005</ma_chi_tiet_don_hang>
+      <so_luong>1</so_luong>
+      <gia_don_vi>88000.00</gia_don_vi>
+      <ma_don_hang>DH005</ma_don_hang>
+      <ma_san_pham>SP005</ma_san_pham>
+      <loai_san_pham>combo</loai_san_pham>
+      <trang_thai>done</trang_thai>
+      <mo_ta/>
+    </ChiTietDonHang>
+    <ChiTietDonHang>
+      <ma_chi_tiet_don_hang>CT006</ma_chi_tiet_don_hang>
+      <so_luong>1</so_luong>
+      <gia_don_vi>88000.00</gia_don_vi>
+      <ma_don_hang>DH006</ma_don_hang>
+      <ma_san_pham>SP006</ma_san_pham>
+      <loai_san_pham>combo</loai_san_pham>
+      <trang_thai>done</trang_thai>
+      <mo_ta/>
+    </ChiTietDonHang>
+    <ChiTietDonHang>
+      <ma_chi_tiet_don_hang>CT007</ma_chi_tiet_don_hang>
+      <so_luong>1</so_luong>
+      <gia_don_vi>88000.00</gia_don_vi>
+      <ma_don_hang>DH007</ma_don_hang>
+      <ma_san_pham>SP007</ma_san_pham>
+      <loai_san_pham>combo</loai_san_pham>
+      <trang_thai>done</trang_thai>
+      <mo_ta/>
+    </ChiTietDonHang>
+  </ChiTietDonHangs>
   <!-- ===== SanPham (5) — FK -> DanhMuc ===== -->
-  <SanPham>
-    <ma_san_pham>SP001</ma_san_pham>
-    <ten_san_pham>Tra dao</ten_san_pham>
-    <mo_ta>Do uong dao</mo_ta>
-    <kich_co>M</kich_co>
-    <mau_sac>Vang</mau_sac>
-    <gia>25000.00</gia>
-    <so_luong_ton>120</so_luong_ton>
-    <tu_san_xuat>false</tu_san_xuat>
-    <trang_thai>ban</trang_thai>
-    <ma_thuong_hieu>BR001</ma_thuong_hieu>
-    <ma_danh_muc>DM001</ma_danh_muc>
-  </SanPham>
-  <SanPham>
-    <ma_san_pham>SP002</ma_san_pham>
-    <ten_san_pham>Soda Chanh</ten_san_pham>
-    <mo_ta>Soda</mo_ta>
-    <kich_co>L</kich_co>
-    <mau_sac>Trong</mau_sac>
-    <gia>28000.00</gia>
-    <so_luong_ton>80</so_luong_ton>
-    <tu_san_xuat>false</tu_san_xuat>
-    <trang_thai>ban</trang_thai>
-    <ma_thuong_hieu>BR001</ma_thuong_hieu>
-    <ma_danh_muc>DM001</ma_danh_muc>
-  </SanPham>
-  <SanPham>
-    <ma_san_pham>SP003</ma_san_pham>
-    <ten_san_pham>Burger Bo</ten_san_pham>
-    <mo_ta>Banh burger</mo_ta>
-    <kich_co>XL</kich_co>
-    <mau_sac>Nau</mau_sac>
-    <gia>65000.00</gia>
-    <so_luong_ton>40</so_luong_ton>
-    <tu_san_xuat>true</tu_san_xuat>
-    <trang_thai>ban</trang_thai>
-    <ma_thuong_hieu>BR002</ma_thuong_hieu>
-    <ma_danh_muc>DM002</ma_danh_muc>
-  </SanPham>
-  <SanPham>
-    <ma_san_pham>SP004</ma_san_pham>
-    <ten_san_pham>Com ga</ten_san_pham>
-    <mo_ta>Mon com</mo_ta>
-    <kich_co>Suất</kich_co>
-    <mau_sac>Vang</mau_sac>
-    <gia>55000.00</gia>
-    <so_luong_ton>60</so_luong_ton>
-    <tu_san_xuat>true</tu_san_xuat>
-    <trang_thai>ban</trang_thai>
-    <ma_thuong_hieu>BR002</ma_thuong_hieu>
-    <ma_danh_muc>DM002</ma_danh_muc>
-  </SanPham>
-  <SanPham>
-    <ma_san_pham>SP005</ma_san_pham>
-    <ten_san_pham>Combo 1</ten_san_pham>
-    <mo_ta>Burger + Nuoc</mo_ta>
-    <kich_co>Set</kich_co>
-    <mau_sac>Mixed</mau_sac>
-    <gia>88000.00</gia>
-    <so_luong_ton>25</so_luong_ton>
-    <tu_san_xuat>false</tu_san_xuat>
-    <trang_thai>ban</trang_thai>
-    <ma_thuong_hieu>BR003</ma_thuong_hieu>
-    <ma_danh_muc>DM005</ma_danh_muc>
-  </SanPham>
+  <SanPhams>
+    <SanPham>
+      <ma_san_pham>SP001</ma_san_pham>
+      <ten_san_pham>Tra dao</ten_san_pham>
+      <mo_ta>Do uong dao</mo_ta>
+      <kich_co>M</kich_co>
+      <mau_sac>Vang</mau_sac>
+      <gia>25000.00</gia>
+      <so_luong_ton>120</so_luong_ton>
+      <tu_san_xuat>false</tu_san_xuat>
+      <trang_thai>ban</trang_thai>
+      <ma_thuong_hieu>BR001</ma_thuong_hieu>
+      <ma_danh_muc>DM001</ma_danh_muc>
+    </SanPham>
+    <SanPham>
+      <ma_san_pham>SP002</ma_san_pham>
+      <ten_san_pham>Soda Chanh</ten_san_pham>
+      <mo_ta>Soda</mo_ta>
+      <kich_co>L</kich_co>
+      <mau_sac>Trong</mau_sac>
+      <gia>28000.00</gia>
+      <so_luong_ton>80</so_luong_ton>
+      <tu_san_xuat>false</tu_san_xuat>
+      <trang_thai>ban</trang_thai>
+      <ma_thuong_hieu>BR001</ma_thuong_hieu>
+      <ma_danh_muc>DM001</ma_danh_muc>
+    </SanPham>
+    <SanPham>
+      <ma_san_pham>SP003</ma_san_pham>
+      <ten_san_pham>Burger Bo</ten_san_pham>
+      <mo_ta>Banh burger</mo_ta>
+      <kich_co>XL</kich_co>
+      <mau_sac>Nau</mau_sac>
+      <gia>65000.00</gia>
+      <so_luong_ton>40</so_luong_ton>
+      <tu_san_xuat>true</tu_san_xuat>
+      <trang_thai>ban</trang_thai>
+      <ma_thuong_hieu>BR002</ma_thuong_hieu>
+      <ma_danh_muc>DM002</ma_danh_muc>
+    </SanPham>
+    <SanPham>
+      <ma_san_pham>SP004</ma_san_pham>
+      <ten_san_pham>Com ga</ten_san_pham>
+      <mo_ta>Mon com</mo_ta>
+      <kich_co>Suất</kich_co>
+      <mau_sac>Vang</mau_sac>
+      <gia>55000.00</gia>
+      <so_luong_ton>60</so_luong_ton>
+      <tu_san_xuat>true</tu_san_xuat>
+      <trang_thai>ban</trang_thai>
+      <ma_thuong_hieu>BR002</ma_thuong_hieu>
+      <ma_danh_muc>DM002</ma_danh_muc>
+    </SanPham>
+    <SanPham>
+      <ma_san_pham>SP005</ma_san_pham>
+      <ten_san_pham>Combo 1</ten_san_pham>
+      <mo_ta>Burger + Nuoc</mo_ta>
+      <kich_co>Set</kich_co>
+      <mau_sac>Mixed</mau_sac>
+      <gia>88000.00</gia>
+      <so_luong_ton>25</so_luong_ton>
+      <tu_san_xuat>false</tu_san_xuat>
+      <trang_thai>ban</trang_thai>
+      <ma_thuong_hieu>BR003</ma_thuong_hieu>
+      <ma_danh_muc>DM005</ma_danh_muc>
+    </SanPham>
+    <SanPham>
+      <ma_san_pham>SP006</ma_san_pham>
+      <ten_san_pham>Combo 2</ten_san_pham>
+      <mo_ta>Burger + Nuoc</mo_ta>
+      <kich_co>Set</kich_co>
+      <mau_sac>Mixed</mau_sac>
+      <gia>88000.00</gia>
+      <so_luong_ton>25</so_luong_ton>
+      <tu_san_xuat>false</tu_san_xuat>
+      <trang_thai>ban</trang_thai>
+      <ma_thuong_hieu>BR003</ma_thuong_hieu>
+      <ma_danh_muc>DM005</ma_danh_muc>
+    </SanPham>
+    <SanPham>
+      <ma_san_pham>SP007</ma_san_pham>
+      <ten_san_pham>Combo 3</ten_san_pham>
+      <mo_ta>Burger + Nuoc</mo_ta>
+      <kich_co>Set</kich_co>
+      <mau_sac>Mixed</mau_sac>
+      <gia>88000.00</gia>
+      <so_luong_ton>25</so_luong_ton>
+      <tu_san_xuat>false</tu_san_xuat>
+      <trang_thai>ban</trang_thai>
+      <ma_thuong_hieu>BR003</ma_thuong_hieu>
+      <ma_danh_muc>DM005</ma_danh_muc>
+    </SanPham>
+  </SanPhams>
+  <!-- ===== TonKho (7) — FK -> SanPham, NhaCungCap ===== -->
+  <TonKhos>
+    <TonKho>
+      <ma_ton_kho>TK001</ma_ton_kho>
+      <so_luong_ton>120</so_luong_ton>
+      <ngay_cap_nhat>2025-09-25</ngay_cap_nhat>
+      <ma_san_pham>SP001</ma_san_pham>
+      <ma_nha_cung_cap>NCC003</ma_nha_cung_cap>
+    </TonKho>
+    <TonKho>
+      <ma_ton_kho>TK002</ma_ton_kho>
+      <so_luong_ton>80</so_luong_ton>
+      <ngay_cap_nhat>2025-09-26</ngay_cap_nhat>
+      <ma_san_pham>SP002</ma_san_pham>
+      <ma_nha_cung_cap>NCC003</ma_nha_cung_cap>
+    </TonKho>
+    <TonKho>
+      <ma_ton_kho>TK003</ma_ton_kho>
+      <so_luong_ton>40</so_luong_ton>
+      <ngay_cap_nhat>2025-09-27</ngay_cap_nhat>
+      <ma_san_pham>SP003</ma_san_pham>
+      <ma_nha_cung_cap>NCC004</ma_nha_cung_cap>
+    </TonKho>
+    <TonKho>
+      <ma_ton_kho>TK004</ma_ton_kho>
+      <so_luong_ton>60</so_luong_ton>
+      <ngay_cap_nhat>2025-09-28</ngay_cap_nhat>
+      <ma_san_pham>SP004</ma_san_pham>
+      <ma_nha_cung_cap>NCC004</ma_nha_cung_cap>
+    </TonKho>
+    <TonKho>
+      <ma_ton_kho>TK005</ma_ton_kho>
+      <so_luong_ton>25</so_luong_ton>
+      <ngay_cap_nhat>2025-09-29</ngay_cap_nhat>
+      <ma_san_pham>SP005</ma_san_pham>
+      <ma_nha_cung_cap>NCC005</ma_nha_cung_cap>
+    </TonKho>
+    <TonKho>
+      <ma_ton_kho>TK006</ma_ton_kho>
+      <so_luong_ton>25</so_luong_ton>
+      <ngay_cap_nhat>2025-09-29</ngay_cap_nhat>
+      <ma_san_pham>SP006</ma_san_pham>
+      <ma_nha_cung_cap>NCC005</ma_nha_cung_cap>
+    </TonKho>
+    <TonKho>
+      <ma_ton_kho>TK007</ma_ton_kho>
+      <so_luong_ton>25</so_luong_ton>
+      <ngay_cap_nhat>2025-09-29</ngay_cap_nhat>
+      <ma_san_pham>SP007</ma_san_pham>
+      <ma_nha_cung_cap>NCC005</ma_nha_cung_cap>
+    </TonKho>
+  </TonKhos>
 
-  <!-- ===== TonKho (5) — FK -> SanPham, NhaCungCap ===== -->
-  <TonKho>
-    <ma_ton_kho>TK001</ma_ton_kho>
-    <so_luong_ton>120</so_luong_ton>
-    <ngay_cap_nhat>2025-09-25</ngay_cap_nhat>
-    <ma_san_pham>SP001</ma_san_pham>
-    <ma_nha_cung_cap>NCC003</ma_nha_cung_cap>
-  </TonKho>
-  <TonKho>
-    <ma_ton_kho>TK002</ma_ton_kho>
-    <so_luong_ton>80</so_luong_ton>
-    <ngay_cap_nhat>2025-09-26</ngay_cap_nhat>
-    <ma_san_pham>SP002</ma_san_pham>
-    <ma_nha_cung_cap>NCC003</ma_nha_cung_cap>
-  </TonKho>
-  <TonKho>
-    <ma_ton_kho>TK003</ma_ton_kho>
-    <so_luong_ton>40</so_luong_ton>
-    <ngay_cap_nhat>2025-09-27</ngay_cap_nhat>
-    <ma_san_pham>SP003</ma_san_pham>
-    <ma_nha_cung_cap>NCC004</ma_nha_cung_cap>
-  </TonKho>
-  <TonKho>
-    <ma_ton_kho>TK004</ma_ton_kho>
-    <so_luong_ton>60</so_luong_ton>
-    <ngay_cap_nhat>2025-09-28</ngay_cap_nhat>
-    <ma_san_pham>SP004</ma_san_pham>
-    <ma_nha_cung_cap>NCC004</ma_nha_cung_cap>
-  </TonKho>
-  <TonKho>
-    <ma_ton_kho>TK005</ma_ton_kho>
-    <so_luong_ton>25</so_luong_ton>
-    <ngay_cap_nhat>2025-09-29</ngay_cap_nhat>
-    <ma_san_pham>SP005</ma_san_pham>
-    <ma_nha_cung_cap>NCC005</ma_nha_cung_cap>
-  </TonKho>
+  <!-- ===== NhaCungCap (7) ===== -->
+  <NhaCungCaps>
+    <NhaCungCap>
+      <ma_nha_cung_cap>NCC001</ma_nha_cung_cap>
+      <ten_nha_cung_cap>GreenFood</ten_nha_cung_cap>
+      <nguoi_lien_he>Anh Minh</nguoi_lien_he>
+      <email>contact@greenfood.vn</email>
+      <dien_thoai>02923888881</dien_thoai>
+      <dia_chi>Can Tho</dia_chi>
+    </NhaCungCap>
+    <NhaCungCap>
+      <ma_nha_cung_cap>NCC002</ma_nha_cung_cap>
+      <ten_nha_cung_cap>FreshFarm</ten_nha_cung_cap>
+      <nguoi_lien_he>Chi Hoa</nguoi_lien_he>
+      <email>sales@freshfarm.vn</email>
+      <dien_thoai>02923888882</dien_thoai>
+      <dia_chi>Vinh Long</dia_chi>
+    </NhaCungCap>
+    <NhaCungCap>
+      <ma_nha_cung_cap>NCC003</ma_nha_cung_cap>
+      <ten_nha_cung_cap>SunDrink</ten_nha_cung_cap>
+      <nguoi_lien_he>Mr. Phuc</nguoi_lien_he>
+      <email>info@sundrink.vn</email>
+      <dien_thoai>02923888883</dien_thoai>
+      <dia_chi>Hau Giang</dia_chi>
+    </NhaCungCap>
+    <NhaCungCap>
+      <ma_nha_cung_cap>NCC004</ma_nha_cung_cap>
+      <ten_nha_cung_cap>MeatPro</ten_nha_cung_cap>
+      <nguoi_lien_he>Ms. Lan</nguoi_lien_he>
+      <email>support@meatpro.vn</email>
+      <dien_thoai>02923888884</dien_thoai>
+      <dia_chi>Can Tho</dia_chi>
+    </NhaCungCap>
+    <NhaCungCap>
+      <ma_nha_cung_cap>NCC005</ma_nha_cung_cap>
+      <ten_nha_cung_cap>PackMate</ten_nha_cung_cap>
+      <nguoi_lien_he>Mr. Son</nguoi_lien_he>
+      <email>hi@packmate.vn</email>
+      <dien_thoai>02923888885</dien_thoai>
+      <dia_chi>Dong Thap</dia_chi>
+    </NhaCungCap>
+    <NhaCungCap>
+      <ma_nha_cung_cap>NCC006</ma_nha_cung_cap>
+      <ten_nha_cung_cap>ComboMate</ten_nha_cung_cap>
+      <nguoi_lien_he>Mr. Hoa</nguoi_lien_he>
+      <email>hi@combomate.vn</email>
+      <dien_thoai>02923888886</dien_thoai>
+      <dia_chi>An Giang</dia_chi>
+    </NhaCungCap>
+    <NhaCungCap>
+      <ma_nha_cung_cap>NCC007</ma_nha_cung_cap>
+      <ten_nha_cung_cap>ComboPro</ten_nha_cung_cap>
+      <nguoi_lien_he>Ms. Thuy</nguoi_lien_he>
+      <email>hi@combopro.vn</email>
+      <dien_thoai>02923888887</dien_thoai>
+      <dia_chi>Ba Ria Vung Tau</dia_chi>
+    </NhaCungCap>
+  </NhaCungCaps>  
+  <!-- ===== DanhMuc (7) ===== -->
+  <DanhMucs>
+    <DanhMuc>
+      <ma_danh_muc>DM001</ma_danh_muc>
+      <ten_danh_muc>Do uong</ten_danh_muc>
+      <mo_ta>Thuc uong cac loai</mo_ta>
+    </DanhMuc>
+    <DanhMuc>
+      <ma_danh_muc>DM002</ma_danh_muc>
+      <ten_danh_muc>Thuc an</ten_danh_muc>
+      <mo_ta>Mon an chinh</mo_ta>
+    </DanhMuc>
+    <DanhMuc>
+      <ma_danh_muc>DM003</ma_danh_muc>
+      <ten_danh_muc>Tp gia dung</ten_danh_muc>
+      <mo_ta>Vat tu</mo_ta>
+    </DanhMuc>
+    <DanhMuc>
+      <ma_danh_muc>DM004</ma_danh_muc>
+      <ten_danh_muc>Ban chay</ten_danh_muc>
+      <mo_ta>Top selling</mo_ta>
+    </DanhMuc>
+    <DanhMuc>
+      <ma_danh_muc>DM005</ma_danh_muc>
+      <ten_danh_muc>Combo</ten_danh_muc>
+      <mo_ta>Goi combo</mo_ta>
+    </DanhMuc>
+    <DanhMuc>
+      <ma_danh_muc>DM006</ma_danh_muc>
+      <ten_danh_muc>Combo</ten_danh_muc>
+      <mo_ta>Goi combo</mo_ta>
+    </DanhMuc>
+    <DanhMuc>
+      <ma_danh_muc>DM007</ma_danh_muc>
+      <ten_danh_muc>Combo</ten_danh_muc>
+      <mo_ta>Goi combo</mo_ta>
+    </DanhMuc>
+  </DanhMucs>
 
-  <!-- ===== NhaCungCap (5) ===== -->
-  <NhaCungCap>
-    <ma_nha_cung_cap>NCC001</ma_nha_cung_cap>
-    <ten_nha_cung_cap>GreenFood</ten_nha_cung_cap>
-    <nguoi_lien_he>Anh Minh</nguoi_lien_he>
-    <email>contact@greenfood.vn</email>
-    <dien_thoai>02923888881</dien_thoai>
-    <dia_chi>Can Tho</dia_chi>
-  </NhaCungCap>
-  <NhaCungCap>
-    <ma_nha_cung_cap>NCC002</ma_nha_cung_cap>
-    <ten_nha_cung_cap>FreshFarm</ten_nha_cung_cap>
-    <nguoi_lien_he>Chi Hoa</nguoi_lien_he>
-    <email>sales@freshfarm.vn</email>
-    <dien_thoai>02923888882</dien_thoai>
-    <dia_chi>Vinh Long</dia_chi>
-  </NhaCungCap>
-  <NhaCungCap>
-    <ma_nha_cung_cap>NCC003</ma_nha_cung_cap>
-    <ten_nha_cung_cap>SunDrink</ten_nha_cung_cap>
-    <nguoi_lien_he>Mr. Phuc</nguoi_lien_he>
-    <email>info@sundrink.vn</email>
-    <dien_thoai>02923888883</dien_thoai>
-    <dia_chi>Hau Giang</dia_chi>
-  </NhaCungCap>
-  <NhaCungCap>
-    <ma_nha_cung_cap>NCC004</ma_nha_cung_cap>
-    <ten_nha_cung_cap>MeatPro</ten_nha_cung_cap>
-    <nguoi_lien_he>Ms. Lan</nguoi_lien_he>
-    <email>support@meatpro.vn</email>
-    <dien_thoai>02923888884</dien_thoai>
-    <dia_chi>Can Tho</dia_chi>
-  </NhaCungCap>
-  <NhaCungCap>
-    <ma_nha_cung_cap>NCC005</ma_nha_cung_cap>
-    <ten_nha_cung_cap>PackMate</ten_nha_cung_cap>
-    <nguoi_lien_he>Mr. Son</nguoi_lien_he>
-    <email>hi@packmate.vn</email>
-    <dien_thoai>02923888885</dien_thoai>
-    <dia_chi>Dong Thap</dia_chi>
-  </NhaCungCap>
-
-  <!-- ===== DanhMuc (5) ===== -->
-  <DanhMuc>
-    <ma_danh_muc>DM001</ma_danh_muc>
-    <ten_danh_muc>Do uong</ten_danh_muc>
-    <mo_ta>Thuc uong cac loai</mo_ta>
-  </DanhMuc>
-  <DanhMuc>
-    <ma_danh_muc>DM002</ma_danh_muc>
-    <ten_danh_muc>Thuc an</ten_danh_muc>
-    <mo_ta>Mon an chinh</mo_ta>
-  </DanhMuc>
-  <DanhMuc>
-    <ma_danh_muc>DM003</ma_danh_muc>
-    <ten_danh_muc>Tp gia dung</ten_danh_muc>
-    <mo_ta>Vat tu</mo_ta>
-  </DanhMuc>
-  <DanhMuc>
-    <ma_danh_muc>DM004</ma_danh_muc>
-    <ten_danh_muc>Ban chay</ten_danh_muc>
-    <mo_ta>Top selling</mo_ta>
-  </DanhMuc>
-  <DanhMuc>
-    <ma_danh_muc>DM005</ma_danh_muc>
-    <ten_danh_muc>Combo</ten_danh_muc>
-    <mo_ta>Goi combo</mo_ta>
-  </DanhMuc>
-
-  <!-- ===== ThanhToan (5) — FK -> DonHang ===== -->
-  <ThanhToan>
-    <ma_thanh_toan>TT001</ma_thanh_toan>
-    <ngay_thanh_toan>2025-10-01</ngay_thanh_toan>
-    <so_tien>113000.00</so_tien>
-    <phuong_thuc>cash</phuong_thuc>
-    <ma_don_hang>DH001</ma_don_hang>
-  </ThanhToan>
-  <ThanhToan>
-    <ma_thanh_toan>TT002</ma_thanh_toan>
-    <ngay_thanh_toan>2025-10-01</ngay_thanh_toan>
-    <so_tien>93000.00</so_tien>
-    <phuong_thuc>card</phuong_thuc>
-    <ma_don_hang>DH002</ma_don_hang>
-  </ThanhToan>
-  <ThanhToan>
-    <ma_thanh_toan>TT003</ma_thanh_toan>
-    <ngay_thanh_toan>2025-10-02</ngay_thanh_toan>
-    <so_tien>0.00</so_tien>
-    <phuong_thuc>none</phuong_thuc>
-    <ma_don_hang>DH003</ma_don_hang>
-  </ThanhToan>
-  <ThanhToan>
-    <ma_thanh_toan>TT004</ma_thanh_toan>
-    <ngay_thanh_toan>2025-10-02</ngay_thanh_toan>
-    <so_tien>80500.00</so_tien>
-    <phuong_thuc>cash</phuong_thuc>
-    <ma_don_hang>DH004</ma_don_hang>
-  </ThanhToan>
-  <ThanhToan>
-    <ma_thanh_toan>TT005</ma_thanh_toan>
-    <ngay_thanh_toan>2025-10-03</ngay_thanh_toan>
-    <so_tien>118000.00</so_tien>
-    <phuong_thuc>card</phuong_thuc>
-    <ma_don_hang>DH005</ma_don_hang>
-  </ThanhToan>
-
-  <!-- ===== NguyenLieu (5) — FK -> NhaCungCap ===== -->
-  <NguyenLieu>
-    <ma_nguyen_lieu>NL001</ma_nguyen_lieu>
-    <ten_nguyen_lieu>Tra dao dong hop</ten_nguyen_lieu>
-    <loai>Do uong</loai>
-    <so_luong_ton>50.0</so_luong_ton>
-    <don_vi>lon</don_vi>
-    <gia>15000.00</gia>
-    <ma_nha_cung_cap>NCC003</ma_nha_cung_cap>
-  </NguyenLieu>
-  <NguyenLieu>
-    <ma_nguyen_lieu>NL002</ma_nguyen_lieu>
-    <ten_nguyen_lieu>Soda base</ten_nguyen_lieu>
-    <loai>Do uong</loai>
-    <so_luong_ton>60.0</so_luong_ton>
-    <don_vi>chai</don_vi>
-    <gia>12000.00</gia>
-    <ma_nha_cung_cap>NCC003</ma_nha_cung_cap>
-  </NguyenLieu>
-  <NguyenLieu>
-    <ma_nguyen_lieu>NL003</ma_nguyen_lieu>
-    <ten_nguyen_lieu>Thit bo</ten_nguyen_lieu>
-    <loai>Thuc pham</loai>
-    <so_luong_ton>25.0</so_luong_ton>
-    <don_vi>kg</don_vi>
-    <gia>180000.00</gia>
-    <ma_nha_cung_cap>NCC004</ma_nha_cung_cap>
-  </NguyenLieu>
-  <NguyenLieu>
-    <ma_nguyen_lieu>NL004</ma_nguyen_lieu>
-    <ten_nguyen_lieu>Ga tuoi</ten_nguyen_lieu>
-    <loai>Thuc pham</loai>
-    <so_luong_ton>30.0</so_luong_ton>
-    <don_vi>kg</don_vi>
-    <gia>120000.00</gia>
-    <ma_nha_cung_cap>NCC004</ma_nha_cung_cap>
-  </NguyenLieu>
-  <NguyenLieu>
-    <ma_nguyen_lieu>NL005</ma_nguyen_lieu>
-    <ten_nguyen_lieu>Bao bi combo</ten_nguyen_lieu>
-    <loai>Vat tu</loai>
-    <so_luong_ton>200.0</so_luong_ton>
-    <don_vi>bo</don_vi>
-    <gia>3000.00</gia>
-    <ma_nha_cung_cap>NCC005</ma_nha_cung_cap>
-  </NguyenLieu>
-
-  <!-- ===== SanPhamNguyenLieu (5) — FK -> SanPham, NguyenLieu ===== -->
-  <SanPhamNguyenLieu>
-    <ma_san_pham_nguyen_lieu>SPNL001</ma_san_pham_nguyen_lieu>
-    <ma_san_pham>SP001</ma_san_pham>
-    <ma_nguyen_lieu>NL001</ma_nguyen_lieu>
-    <so_luong>1.0</so_luong>
-    <don_vi>lon</don_vi>
-  </SanPhamNguyenLieu>
-  <SanPhamNguyenLieu>
-    <ma_san_pham_nguyen_lieu>SPNL002</ma_san_pham_nguyen_lieu>
-    <ma_san_pham>SP002</ma_san_pham>
-    <ma_nguyen_lieu>NL002</ma_nguyen_lieu>
-    <so_luong>1.0</so_luong>
-    <don_vi>chai</don_vi>
-  </SanPhamNguyenLieu>
-  <SanPhamNguyenLieu>
-    <ma_san_pham_nguyen_lieu>SPNL003</ma_san_pham_nguyen_lieu>
-    <ma_san_pham>SP003</ma_san_pham>
-    <ma_nguyen_lieu>NL003</ma_nguyen_lieu>
-    <so_luong>0.15</so_luong>
-    <don_vi>kg</don_vi>
-  </SanPhamNguyenLieu>
-  <SanPhamNguyenLieu>
-    <ma_san_pham_nguyen_lieu>SPNL004</ma_san_pham_nguyen_lieu>
-    <ma_san_pham>SP004</ma_san_pham>
-    <ma_nguyen_lieu>NL004</ma_nguyen_lieu>
-    <so_luong>0.2</so_luong>
-    <don_vi>kg</don_vi>
-  </SanPhamNguyenLieu>
-  <SanPhamNguyenLieu>
-    <ma_san_pham_nguyen_lieu>SPNL005</ma_san_pham_nguyen_lieu>
-    <ma_san_pham>SP005</ma_san_pham>
-    <ma_nguyen_lieu>NL005</ma_nguyen_lieu>
-    <so_luong>1.0</so_luong>
-    <don_vi>bo</don_vi>
-  </SanPhamNguyenLieu>
+  <!-- ===== ThanhToan (7) — FK -> DonHang ===== -->
+  <ThanhToans>
+    <ThanhToan>
+      <ma_thanh_toan>TT001</ma_thanh_toan>
+      <ngay_thanh_toan>2025-10-01</ngay_thanh_toan>
+      <so_tien>113000.00</so_tien>
+      <phuong_thuc>cash</phuong_thuc>
+      <ma_don_hang>DH001</ma_don_hang>
+    </ThanhToan>
+    <ThanhToan>
+      <ma_thanh_toan>TT002</ma_thanh_toan>
+      <ngay_thanh_toan>2025-10-01</ngay_thanh_toan>
+      <so_tien>93000.00</so_tien>
+      <phuong_thuc>card</phuong_thuc>
+      <ma_don_hang>DH002</ma_don_hang>
+    </ThanhToan>
+    <ThanhToan>
+      <ma_thanh_toan>TT003</ma_thanh_toan>
+      <ngay_thanh_toan>2025-10-02</ngay_thanh_toan>
+      <so_tien>0.00</so_tien>
+      <phuong_thuc>none</phuong_thuc>
+      <ma_don_hang>DH003</ma_don_hang>
+    </ThanhToan>
+    <ThanhToan>
+      <ma_thanh_toan>TT004</ma_thanh_toan>
+      <ngay_thanh_toan>2025-10-02</ngay_thanh_toan>
+      <so_tien>80500.00</so_tien>
+      <phuong_thuc>cash</phuong_thuc>
+      <ma_don_hang>DH004</ma_don_hang>
+    </ThanhToan>
+    <ThanhToan>
+      <ma_thanh_toan>TT005</ma_thanh_toan>
+      <ngay_thanh_toan>2025-10-03</ngay_thanh_toan>
+      <so_tien>118000.00</so_tien>
+      <phuong_thuc>card</phuong_thuc>
+      <ma_don_hang>DH005</ma_don_hang>
+    </ThanhToan>
+    <ThanhToan>
+      <ma_thanh_toan>TT006</ma_thanh_toan>
+      <ngay_thanh_toan>2025-10-04</ngay_thanh_toan>
+      <so_tien>118000.00</so_tien>
+      <phuong_thuc>card</phuong_thuc>
+      <ma_don_hang>DH006</ma_don_hang>
+    </ThanhToan>
+    <ThanhToan>
+      <ma_thanh_toan>TT007</ma_thanh_toan>
+      <ngay_thanh_toan>2025-10-05</ngay_thanh_toan>
+      <so_tien>118000.00</so_tien>
+      <phuong_thuc>card</phuong_thuc>
+      <ma_don_hang>DH007</ma_don_hang>
+    </ThanhToan>
+  </ThanhToans>
+  <!-- ===== NguyenLieu (7) — FK -> NhaCungCap ===== -->
+  <NguyenLieus>
+    <NguyenLieu>
+      <ma_nguyen_lieu>NL001</ma_nguyen_lieu>
+      <ten_nguyen_lieu>Tra dao dong hop</ten_nguyen_lieu>
+      <loai>Do uong</loai>
+      <so_luong_ton>50.0</so_luong_ton>
+      <don_vi>lon</don_vi>
+      <gia>15000.00</gia>
+      <ma_nha_cung_cap>NCC003</ma_nha_cung_cap>
+    </NguyenLieu>
+    <NguyenLieu>
+      <ma_nguyen_lieu>NL002</ma_nguyen_lieu>
+      <ten_nguyen_lieu>Soda base</ten_nguyen_lieu>
+      <loai>Do uong</loai>
+      <so_luong_ton>60.0</so_luong_ton>
+      <don_vi>chai</don_vi>
+      <gia>12000.00</gia>
+      <ma_nha_cung_cap>NCC003</ma_nha_cung_cap>
+    </NguyenLieu>
+    <NguyenLieu>
+      <ma_nguyen_lieu>NL003</ma_nguyen_lieu>
+      <ten_nguyen_lieu>Thit bo</ten_nguyen_lieu>
+      <loai>Thuc pham</loai>
+      <so_luong_ton>25.0</so_luong_ton>
+      <don_vi>kg</don_vi>
+      <gia>180000.00</gia>
+      <ma_nha_cung_cap>NCC004</ma_nha_cung_cap>
+    </NguyenLieu>
+    <NguyenLieu>
+      <ma_nguyen_lieu>NL004</ma_nguyen_lieu>
+      <ten_nguyen_lieu>Ga tuoi</ten_nguyen_lieu>
+      <loai>Thuc pham</loai>
+      <so_luong_ton>30.0</so_luong_ton>
+      <don_vi>kg</don_vi>
+      <gia>120000.00</gia>
+      <ma_nha_cung_cap>NCC004</ma_nha_cung_cap>
+    </NguyenLieu>
+    <NguyenLieu>
+      <ma_nguyen_lieu>NL005</ma_nguyen_lieu>
+      <ten_nguyen_lieu>Bao bi combo</ten_nguyen_lieu>
+      <loai>Vat tu</loai>
+      <so_luong_ton>200.0</so_luong_ton>
+      <don_vi>bo</don_vi>
+      <gia>3000.00</gia>
+      <ma_nha_cung_cap>NCC005</ma_nha_cung_cap>
+    </NguyenLieu>
+    <NguyenLieu>
+      <ma_nguyen_lieu>NL006</ma_nguyen_lieu>
+      <ten_nguyen_lieu>Ga tuoi</ten_nguyen_lieu>
+      <loai>Thuc pham</loai>
+      <so_luong_ton>30.0</so_luong_ton>
+      <don_vi>kg</don_vi>
+      <gia>120000.00</gia>
+      <ma_nha_cung_cap>NCC006</ma_nha_cung_cap>
+    </NguyenLieu>
+    <NguyenLieu>
+      <ma_nguyen_lieu>NL007</ma_nguyen_lieu>
+      <ten_nguyen_lieu>Bao bi combo</ten_nguyen_lieu>
+      <loai>Vat tu</loai>
+      <so_luong_ton>200.0</so_luong_ton>
+      <don_vi>bo</don_vi>
+      <gia>3000.00</gia>
+      <ma_nha_cung_cap>NCC007</ma_nha_cung_cap>
+    </NguyenLieu>
+  </NguyenLieus>  
+  <!-- ===== SanPhamNguyenLieu (11) — FK -> SanPham, NguyenLieu ===== -->
+  <SanPhamNguyenLieus>
+    <SanPhamNguyenLieu>
+      <ma_san_pham_nguyen_lieu>SPNL001</ma_san_pham_nguyen_lieu>
+      <ma_san_pham>SP001</ma_san_pham>
+      <ma_nguyen_lieu>NL001</ma_nguyen_lieu>
+      <so_luong>1.0</so_luong>
+      <don_vi>lon</don_vi>
+    </SanPhamNguyenLieu>
+    <SanPhamNguyenLieu>
+      <ma_san_pham_nguyen_lieu>SPNL002</ma_san_pham_nguyen_lieu>
+      <ma_san_pham>SP002</ma_san_pham>
+      <ma_nguyen_lieu>NL002</ma_nguyen_lieu>
+      <so_luong>1.0</so_luong>
+      <don_vi>chai</don_vi>
+    </SanPhamNguyenLieu>
+    <SanPhamNguyenLieu>
+      <ma_san_pham_nguyen_lieu>SPNL003</ma_san_pham_nguyen_lieu>
+      <ma_san_pham>SP003</ma_san_pham>
+      <ma_nguyen_lieu>NL003</ma_nguyen_lieu>
+      <so_luong>0.15</so_luong>
+      <don_vi>kg</don_vi>
+    </SanPhamNguyenLieu>
+    <SanPhamNguyenLieu>
+      <ma_san_pham_nguyen_lieu>SPNL004</ma_san_pham_nguyen_lieu>
+      <ma_san_pham>SP004</ma_san_pham>
+      <ma_nguyen_lieu>NL004</ma_nguyen_lieu>
+      <so_luong>0.2</so_luong>
+      <don_vi>kg</don_vi>
+    </SanPhamNguyenLieu>
+    <SanPhamNguyenLieu>
+      <ma_san_pham_nguyen_lieu>SPNL005</ma_san_pham_nguyen_lieu>
+      <ma_san_pham>SP005</ma_san_pham>
+      <ma_nguyen_lieu>NL005</ma_nguyen_lieu>
+      <so_luong>1.0</so_luong>
+      <don_vi>bo</don_vi>
+    </SanPhamNguyenLieu>
+    <SanPhamNguyenLieu>
+      <ma_san_pham_nguyen_lieu>SPNL007</ma_san_pham_nguyen_lieu>
+      <ma_san_pham>SP002</ma_san_pham>
+      <ma_nguyen_lieu>NL002</ma_nguyen_lieu>
+      <so_luong>1.0</so_luong>
+      <don_vi>chai</don_vi>
+    </SanPhamNguyenLieu>
+    <SanPhamNguyenLieu>
+      <ma_san_pham_nguyen_lieu>SPNL006</ma_san_pham_nguyen_lieu>
+      <ma_san_pham>SP006</ma_san_pham>
+      <ma_nguyen_lieu>NL003</ma_nguyen_lieu>
+      <so_luong>0.15</so_luong>
+      <don_vi>kg</don_vi>
+    </SanPhamNguyenLieu>
+    <SanPhamNguyenLieu>
+      <ma_san_pham_nguyen_lieu>SPNL008</ma_san_pham_nguyen_lieu>
+      <ma_san_pham>SP006</ma_san_pham>
+      <ma_nguyen_lieu>NL004</ma_nguyen_lieu>
+      <so_luong>0.2</so_luong>
+      <don_vi>kg</don_vi>
+    </SanPhamNguyenLieu>
+    <SanPhamNguyenLieu>
+      <ma_san_pham_nguyen_lieu>SPNL009</ma_san_pham_nguyen_lieu>
+      <ma_san_pham>SP006</ma_san_pham>
+      <ma_nguyen_lieu>NL005</ma_nguyen_lieu>
+      <so_luong>1.0</so_luong>
+      <don_vi>bo</don_vi>
+    </SanPhamNguyenLieu>
+    <SanPhamNguyenLieu>
+      <ma_san_pham_nguyen_lieu>SPNL010</ma_san_pham_nguyen_lieu>
+      <ma_san_pham>SP006</ma_san_pham>
+      <ma_nguyen_lieu>NL006</ma_nguyen_lieu>
+      <so_luong>1.0</so_luong>
+      <don_vi>kg</don_vi>
+    </SanPhamNguyenLieu>
+    <SanPhamNguyenLieu>
+      <ma_san_pham_nguyen_lieu>SPNL011</ma_san_pham_nguyen_lieu>
+      <ma_san_pham>SP006</ma_san_pham>
+      <ma_nguyen_lieu>NL007</ma_nguyen_lieu>
+      <so_luong>1.0</so_luong>
+      <don_vi>bo</don_vi>
+    </SanPhamNguyenLieu>
+  </SanPhamNguyenLieus>
 
 </TailorTrackSystem>

@@ -1,7 +1,21 @@
 <!ELEMENT TailorTrackSystem (
-  KhachHang+, NhanVien+, DonHang+, DonHangNhanVien+, ChiTietDonHang+,
-  SanPham+, TonKho+, NhaCungCap+, DanhMuc+, ThanhToan+, NguyenLieu+, SanPhamNguyenLieu+
+  KhachHangs, NhanViens, DonHangs, DonHangNhanViens, ChiTietDonHangs,
+  SanPhams, TonKhos, NhaCungCaps, DanhMucs, ThanhToans, NguyenLieus, SanPhamNguyenLieus
 )>
+
+<!-- ===== NHÓM PHẦN TỬ ===== -->
+<!ELEMENT KhachHangs (KhachHang+)>
+<!ELEMENT NhanViens (NhanVien+)>
+<!ELEMENT DonHangs (DonHang+)>
+<!ELEMENT DonHangNhanViens (DonHangNhanVien+)>
+<!ELEMENT ChiTietDonHangs (ChiTietDonHang+)>
+<!ELEMENT SanPhams (SanPham+)>
+<!ELEMENT TonKhos (TonKho+)>
+<!ELEMENT NhaCungCaps (NhaCungCap+)>
+<!ELEMENT DanhMucs (DanhMuc+)>
+<!ELEMENT ThanhToans (ThanhToan+)>
+<!ELEMENT NguyenLieus (NguyenLieu+)>
+<!ELEMENT SanPhamNguyenLieus (SanPhamNguyenLieu+)>
 
 <!-- ===== KhachHang ===== -->
 <!ELEMENT KhachHang (ma_khach_hang, ho_ten, email, so_dien_thoai, dia_chi, ngay_dang_ky, diem_tich_luy)>
