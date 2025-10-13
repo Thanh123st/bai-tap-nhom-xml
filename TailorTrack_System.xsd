@@ -4,8 +4,8 @@
            xmlns:tns="http://www.ctut.edu.vn/material"
            xmlns="http://www.ctut.edu.vn/material"
            elementFormDefault="qualified">
-
-  <!-- ===================== ROOT ===================== -->
+  
+  <!-- ==================== ROOT ==================== -->
   <xs:element name="TailorTrackSystem">
     <xs:complexType>
       <xs:sequence>
