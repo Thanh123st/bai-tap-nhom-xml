@@ -18,7 +18,7 @@
                     <xs:element name="ma_khach_hang" type="xs:string"/>
                     <xs:element name="ho_ten"          type="xs:string"/>
                     <xs:element name="email"           type="xs:string"/>
-                    <xs:element name="so_dien_thoai"   type="xs:string"/>
+                    <xs:element name="so_dien_thoai"   type="xs:integer"/>
                     <xs:element name="dia_chi"         type="xs:string"/>
                     <xs:element name="ngay_dang_ky"    type="xs:date"/>
                     <xs:element name="diem_tich_luy"   type="xs:integer"/>
@@ -38,7 +38,7 @@
                     <xs:element name="ma_nhan_vien" type="xs:string"/>
                     <xs:element name="ho_ten"       type="xs:string"/>
                     <xs:element name="email"        type="xs:string"/>
-                    <xs:element name="so_dien_thoai" type="xs:string"/>
+                    <xs:element name="so_dien_thoai" type="xs:integer"/>
                     <xs:element name="chuc_vu"      type="xs:string"/>
                     <xs:element name="luong"        type="xs:decimal"/>
                     <xs:element name="ngay_tuyen"   type="xs:date"/>
