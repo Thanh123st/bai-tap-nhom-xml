@@ -18,7 +18,13 @@
                     <xs:element name="ma_khach_hang" type="xs:string"/>
                     <xs:element name="ho_ten"          type="xs:string"/>
                     <xs:element name="email"           type="xs:string"/>
-                    <xs:element name="so_dien_thoai"   type="xs:integer"/>
+                    <xs:element name="so_dien_thoai">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="\d{9,11}"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
                     <xs:element name="dia_chi"         type="xs:string"/>
                     <xs:element name="ngay_dang_ky"    type="xs:date"/>
                     <xs:element name="diem_tich_luy"   type="xs:integer"/>
@@ -38,7 +44,13 @@
                     <xs:element name="ma_nhan_vien" type="xs:string"/>
                     <xs:element name="ho_ten"       type="xs:string"/>
                     <xs:element name="email"        type="xs:string"/>
-                    <xs:element name="so_dien_thoai" type="xs:integer"/>
+                    <xs:element name="so_dien_thoai">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="\d{9,11}"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
                     <xs:element name="chuc_vu"      type="xs:string"/>
                     <xs:element name="luong"        type="xs:decimal"/>
                     <xs:element name="ngay_tuyen"   type="xs:date"/>
@@ -58,7 +70,17 @@
                     <xs:element name="ma_don_hang"   type="xs:string"/>
                     <xs:element name="ngay_dat"      type="xs:date"/>
                     <xs:element name="tong_tien"     type="xs:decimal"/>
-                    <xs:element name="trang_thai"    type="xs:string"/>
+                    <xs:element name="trang_thai">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="pending"/>
+                          <xs:enumeration value="paid"/>
+                          <xs:enumeration value="shipped"/>
+                          <xs:enumeration value="delivered"/>
+                          <xs:enumeration value="canceled"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
                     <xs:element name="ma_khach_hang" type="xs:string"/>
                     <xs:element name="mo_ta_yeu_cau" type="xs:string" minOccurs="0"/>
                   </xs:sequence>
@@ -77,7 +99,18 @@
                     <xs:element name="ma_don_hang_nhan_vien" type="xs:string"/>
                     <xs:element name="ma_don_hang"          type="xs:string"/>
                     <xs:element name="ma_nhan_vien"         type="xs:string"/>
-                    <xs:element name="vai_tro"              type="xs:string"/>
+                    <xs:element name="vai_tro">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Tư vấn"/>
+                          <xs:enumeration value="Thu ngân"/>
+                          <xs:enumeration value="Quản lý kho"/>
+                          <xs:enumeration value="May đo"/>
+                          <xs:enumeration value="Giao hàng"/>
+                          <xs:enumeration value="Kiểm tra chất lượng"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
                     <xs:element name="ghi_chu"              type="xs:string" minOccurs="0"/>
                   </xs:sequence>
                 </xs:complexType>
@@ -98,7 +131,17 @@
                     <xs:element name="ma_don_hang"          type="xs:string"/>
                     <xs:element name="ma_san_pham"          type="xs:string"/>
                     <xs:element name="loai_san_pham"        type="xs:string" minOccurs="0"/>
-                    <xs:element name="trang_thai"           type="xs:string" minOccurs="0"/>
+                    <xs:element name="trang_thai" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="pending"/>
+                          <xs:enumeration value="processing"/>
+                          <xs:enumeration value="done"/>
+                          <xs:enumeration value="canceled"/>
+                          <xs:enumeration value="returned"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
                     <xs:element name="mo_ta"                type="xs:string" minOccurs="0"/>
                   </xs:sequence>
                 </xs:complexType>
@@ -121,7 +164,17 @@
                     <xs:element name="gia"           type="xs:decimal"/>
                     <xs:element name="so_luong_ton"  type="xs:integer"/>
                     <xs:element name="tu_san_xuat"   type="xs:boolean"/>
-                    <xs:element name="trang_thai"    type="xs:string" minOccurs="0"/>
+                    <xs:element name="trang_thai" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="available"/>
+                          <xs:enumeration value="out_of_stock"/>
+                          <xs:enumeration value="discontinued"/>
+                          <xs:enumeration value="draft"/>
+                          <xs:enumeration value="coming_soon"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
                     <xs:element name="ma_thuong_hieu" type="xs:string" minOccurs="0"/>
                     <xs:element name="ma_danh_muc"   type="xs:string"/>
                   </xs:sequence>

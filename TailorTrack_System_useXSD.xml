@@ -336,7 +336,7 @@
       <gia>25000.00</gia>
       <so_luong_ton>120</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
-      <trang_thai>ban</trang_thai>
+      <trang_thai>available</trang_thai>
       <ma_thuong_hieu>BR001</ma_thuong_hieu>
       <ma_danh_muc>DM001</ma_danh_muc>
     </SanPham>
@@ -349,7 +349,7 @@
       <gia>28000.00</gia>
       <so_luong_ton>80</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
-      <trang_thai>ban</trang_thai>
+      <trang_thai>available</trang_thai>
       <ma_thuong_hieu>BR001</ma_thuong_hieu>
       <ma_danh_muc>DM001</ma_danh_muc>
     </SanPham>
@@ -362,7 +362,7 @@
       <gia>65000.00</gia>
       <so_luong_ton>40</so_luong_ton>
       <tu_san_xuat>true</tu_san_xuat>
-      <trang_thai>ban</trang_thai>
+      <trang_thai>available</trang_thai>
       <ma_thuong_hieu>BR002</ma_thuong_hieu>
       <ma_danh_muc>DM002</ma_danh_muc>
     </SanPham>
@@ -375,7 +375,7 @@
       <gia>55000.00</gia>
       <so_luong_ton>60</so_luong_ton>
       <tu_san_xuat>true</tu_san_xuat>
-      <trang_thai>ban</trang_thai>
+      <trang_thai>available</trang_thai>
       <ma_thuong_hieu>BR002</ma_thuong_hieu>
       <ma_danh_muc>DM002</ma_danh_muc>
     </SanPham>
@@ -388,7 +388,7 @@
       <gia>88000.00</gia>
       <so_luong_ton>25</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
-      <trang_thai>ban</trang_thai>
+      <trang_thai>available</trang_thai>
       <ma_thuong_hieu>BR003</ma_thuong_hieu>
       <ma_danh_muc>DM005</ma_danh_muc>
     </SanPham>
@@ -401,7 +401,7 @@
       <gia>88000.00</gia>
       <so_luong_ton>25</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
-      <trang_thai>ban</trang_thai>
+      <trang_thai>available</trang_thai>
       <ma_thuong_hieu>BR003</ma_thuong_hieu>
       <ma_danh_muc>DM005</ma_danh_muc>
     </SanPham>
@@ -414,7 +414,7 @@
       <gia>88000.00</gia>
       <so_luong_ton>25</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
-      <trang_thai>ban</trang_thai>
+      <trang_thai>available</trang_thai>
       <ma_thuong_hieu>BR003</ma_thuong_hieu>
       <ma_danh_muc>DM005</ma_danh_muc>
     </SanPham>
