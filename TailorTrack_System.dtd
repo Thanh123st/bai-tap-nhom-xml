@@ -3,7 +3,7 @@
   SanPhams, TonKhos, NhaCungCaps, DanhMucs, ThanhToans, NguyenLieus, SanPhamNguyenLieus
 )>
 
-<!-- ===== NHÓM PHẦN TỬ ===== -->
+<!-- ==== NHÓM PHẦN TỬ ==== -->
 <!ELEMENT KhachHangs (KhachHang+)>
 <!ELEMENT NhanViens (NhanVien+)>
 <!ELEMENT DonHangs (DonHang+)>
