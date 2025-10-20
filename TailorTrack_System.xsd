@@ -4,7 +4,148 @@
            xmlns:tns="http://www.ctut.edu.vn/material"
            xmlns="http://www.ctut.edu.vn/material"
            elementFormDefault="qualified">
+
+
+  <xs:simpleType name="HoTenType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="2"/>
+      <xs:maxLength value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TenType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="2"/>
+      <xs:maxLength value="200"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="EmailType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PhoneType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{9,11}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DiemTichLuyType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TienType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DiaChiType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="5"/>
+      <xs:maxLength value="200"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SoLuongType">
+    <xs:restriction base="xs:float">
+      <xs:minInclusive value="0.0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DonViTinhType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="mét"/>
+      <xs:enumeration value="cuộn"/>
+      <xs:enumeration value="kg"/>
+      <xs:enumeration value="cái"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaKhachHangType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="KH[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaNhanVienType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="NV[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaDonHangType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="DH[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaDonHangNhanVienType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="DHNV[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaChiTietDonHangType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="CT[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaSanPhamType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="SP[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaThuongHieuType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="BR[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaDanhMucType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="DM[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaTonKhoType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="TK[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaNhaCungCapType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="NCC[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaThanhToanType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="TT[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaNguyenLieuType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="NL[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="MaSanPhamNguyenLieuType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="SPNL[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
   
+
+          
   <!-- ==================== ROOT ==================== -->
   <xs:element name="TailorTrackSystem">
     <xs:complexType>
@@ -15,19 +156,13 @@
               <xs:element name="KhachHang" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_khach_hang" type="xs:string"/>
-                    <xs:element name="ho_ten"          type="xs:string"/>
-                    <xs:element name="email"           type="xs:string"/>
-                    <xs:element name="so_dien_thoai">
-                      <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                          <xs:pattern value="\d{9,11}"/>
-                        </xs:restriction>
-                      </xs:simpleType>
-                    </xs:element>
-                    <xs:element name="dia_chi"         type="xs:string"/>
+                    <xs:element name="ma_khach_hang" type="tns:MaKhachHangType"/>
+                    <xs:element name="ho_ten"          type="tns:HoTenType"/>
+                    <xs:element name="email" type="tns:EmailType" />
+                    <xs:element name="so_dien_thoai" type="tns:PhoneType"/>
+                    <xs:element name="dia_chi"         type="tns:DiaChiType"/>
                     <xs:element name="ngay_dang_ky"    type="xs:date"/>
-                    <xs:element name="diem_tich_luy"   type="xs:integer"/>
+                    <xs:element name="diem_tich_luy" type="tns:DiemTichLuyType" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -41,18 +176,22 @@
               <xs:element name="NhanVien" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_nhan_vien" type="xs:string"/>
-                    <xs:element name="ho_ten"       type="xs:string"/>
-                    <xs:element name="email"        type="xs:string"/>
-                    <xs:element name="so_dien_thoai">
+                    <xs:element name="ma_nhan_vien" type="tns:MaNhanVienType"/>
+                    <xs:element name="ho_ten"       type="tns:HoTenType"/>
+                    <xs:element name="email" type="tns:EmailType"/>
+                    <xs:element name="so_dien_thoai" type="tns:PhoneType"/>
+                    <xs:element name="chuc_vu">
                       <xs:simpleType>
                         <xs:restriction base="xs:string">
-                          <xs:pattern value="\d{9,11}"/>
+                          <xs:enumeration value="Quản lý"/>
+                          <xs:enumeration value="Tư vấn viên"/>
+                          <xs:enumeration value="Quản lý kho"/>
+                          <xs:enumeration value="Thu ngân"/>
+                          <xs:enumeration value="Chăm sóc khách hàng"/>
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
-                    <xs:element name="chuc_vu"      type="xs:string"/>
-                    <xs:element name="luong"        type="xs:decimal"/>
+                    <xs:element name="luong"        type="tns:TienType"/>
                     <xs:element name="ngay_tuyen"   type="xs:date"/>
                   </xs:sequence>
                 </xs:complexType>
@@ -67,9 +206,9 @@
               <xs:element name="DonHang" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_don_hang"   type="xs:string"/>
+                    <xs:element name="ma_don_hang"   type="tns:MaDonHangType"/>
                     <xs:element name="ngay_dat"      type="xs:date"/>
-                    <xs:element name="tong_tien"     type="xs:decimal"/>
+                    <xs:element name="tong_tien" type="tns:TienType" />
                     <xs:element name="trang_thai">
                       <xs:simpleType>
                         <xs:restriction base="xs:string">
@@ -81,7 +220,7 @@
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
-                    <xs:element name="ma_khach_hang" type="xs:string"/>
+                    <xs:element name="ma_khach_hang" type="tns:MaKhachHangType"/>
                     <xs:element name="mo_ta_yeu_cau" type="xs:string" minOccurs="0"/>
                   </xs:sequence>
                 </xs:complexType>
@@ -96,9 +235,9 @@
               <xs:element name="DonHangNhanVien" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_don_hang_nhan_vien" type="xs:string"/>
-                    <xs:element name="ma_don_hang"          type="xs:string"/>
-                    <xs:element name="ma_nhan_vien"         type="xs:string"/>
+                    <xs:element name="ma_don_hang_nhan_vien" type="tns:MaDonHangNhanVienType"/>
+                    <xs:element name="ma_don_hang"          type="tns:MaDonHangType"/>
+                    <xs:element name="ma_nhan_vien"         type="tns:MaNhanVienType"/>
                     <xs:element name="vai_tro">
                       <xs:simpleType>
                         <xs:restriction base="xs:string">
@@ -111,7 +250,7 @@
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
-                    <xs:element name="ghi_chu"              type="xs:string" minOccurs="0"/>
+                    <xs:element name="ghi_chu" type="xs:string" minOccurs="0"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -125,13 +264,27 @@
               <xs:element name="ChiTietDonHang" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_chi_tiet_don_hang" type="xs:string"/>
-                    <xs:element name="so_luong"             type="xs:integer"/>
-                    <xs:element name="gia_don_vi"           type="xs:decimal"/>
+                    <xs:element name="ma_chi_tiet_don_hang" type="tns:MaChiTietDonHangType"/>
+                    <xs:element name="so_luong"             type="xs:positiveInteger"/>
+                    <xs:element name="gia_don_vi" type="tns:TienType" />
                     <xs:element name="ma_don_hang"          type="xs:string"/>
                     <xs:element name="ma_san_pham"          type="xs:string"/>
-                    <xs:element name="loai_san_pham"        type="xs:string" minOccurs="0"/>
-                    <xs:element name="trang_thai" minOccurs="0">
+                    <xs:element name="loai_san_pham">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="áo"/>
+                          <xs:enumeration value="quần"/>
+                          <xs:enumeration value="váy"/>
+                          <xs:enumeration value="đầm"/>
+                          <xs:enumeration value="bộ"/>
+                          <xs:enumeration value="áo Khóac"/>
+                          <xs:enumeration value="đồ lót"/>
+                          <xs:enumeration value="phụ kiện"/>
+                          <xs:enumeration value="khác"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="trang_thai">
                       <xs:simpleType>
                         <xs:restriction base="xs:string">
                           <xs:enumeration value="pending"/>
@@ -142,7 +295,7 @@
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
-                    <xs:element name="mo_ta"                type="xs:string" minOccurs="0"/>
+                    <xs:element name="mo_ta" type="xs:string" minOccurs="0"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -156,15 +309,15 @@
               <xs:element name="SanPham" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_san_pham"   type="xs:string"/>
-                    <xs:element name="ten_san_pham"  type="xs:string"/>
+                    <xs:element name="ma_san_pham"   type="tns:MaSanPhamType"/>
+                    <xs:element name="ten_san_pham"  type="tns:TenType"/>
                     <xs:element name="mo_ta"         type="xs:string" minOccurs="0"/>
                     <xs:element name="kich_co"       type="xs:string" minOccurs="0"/>
                     <xs:element name="mau_sac"       type="xs:string" minOccurs="0"/>
-                    <xs:element name="gia"           type="xs:decimal"/>
-                    <xs:element name="so_luong_ton"  type="xs:integer"/>
+                    <xs:element name="gia"           type="tns:TienType"/>
+                    <xs:element name="so_luong_ton"  type="xs:nonNegativeInteger"/>
                     <xs:element name="tu_san_xuat"   type="xs:boolean"/>
-                    <xs:element name="trang_thai" minOccurs="0">
+                    <xs:element name="trang_thai">
                       <xs:simpleType>
                         <xs:restriction base="xs:string">
                           <xs:enumeration value="available"/>
@@ -175,8 +328,8 @@
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
-                    <xs:element name="ma_thuong_hieu" type="xs:string" minOccurs="0"/>
-                    <xs:element name="ma_danh_muc"   type="xs:string"/>
+                    <xs:element name="ma_thuong_hieu" type="tns:MaThuongHieuType" minOccurs="0"/>
+                    <xs:element name="ma_danh_muc"   type="tns:MaDanhMucType"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -190,11 +343,11 @@
               <xs:element name="TonKho" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_ton_kho"    type="xs:string"/>
-                    <xs:element name="so_luong_ton"  type="xs:integer"/>
+                    <xs:element name="ma_ton_kho"    type="tns:MaTonKhoType"/>
+                    <xs:element name="so_luong_ton"  type="xs:nonNegativeInteger"/>
                     <xs:element name="ngay_cap_nhat" type="xs:date"/>
-                    <xs:element name="ma_san_pham"   type="xs:string"/>
-                    <xs:element name="ma_nha_cung_cap" type="xs:string"/>
+                    <xs:element name="ma_san_pham"   type="tns:MaSanPhamType"/>
+                    <xs:element name="ma_nha_cung_cap" type="tns:MaNhaCungCapType"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -208,12 +361,12 @@
               <xs:element name="NhaCungCap" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_nha_cung_cap"  type="xs:string"/>
-                    <xs:element name="ten_nha_cung_cap" type="xs:string"/>
+                    <xs:element name="ma_nha_cung_cap"  type="tns:MaNhaCungCapType"/>
+                    <xs:element name="ten_nha_cung_cap" type="tns:TenType"/>
                     <xs:element name="nguoi_lien_he"    type="xs:string" minOccurs="0"/>
-                    <xs:element name="email"            type="xs:string"/>
-                    <xs:element name="dien_thoai"       type="xs:string"/>
-                    <xs:element name="dia_chi"          type="xs:string"/>
+                    <xs:element name="email"            type="tns:EmailType"/>
+                    <xs:element name="dien_thoai"       type="tns:PhoneType"/>
+                    <xs:element name="dia_chi"          type="tns:DiaChiType"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -243,11 +396,19 @@
               <xs:element name="ThanhToan" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_thanh_toan"   type="xs:string"/>
+                    <xs:element name="ma_thanh_toan"   type="tns:MaThanhToanType"/>
                     <xs:element name="ngay_thanh_toan" type="xs:date"/>
-                    <xs:element name="so_tien"         type="xs:decimal"/>
-                    <xs:element name="phuong_thuc"     type="xs:string"/>
-                    <xs:element name="ma_don_hang"     type="xs:string"/>
+                    <xs:element name="so_tien"         type="tns:TienType"/>
+                    <xs:element name="phuong_thuc">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="cash"/>
+                          <xs:enumeration value="card"/>
+                          <xs:enumeration value="none"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="ma_don_hang"     type="tns:MaDonHangType"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -261,13 +422,20 @@
               <xs:element name="NguyenLieu" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_nguyen_lieu" type="xs:string"/>
-                    <xs:element name="ten_nguyen_lieu" type="xs:string"/>
-                    <xs:element name="loai"            type="xs:string" minOccurs="0"/>
-                    <xs:element name="so_luong_ton"    type="xs:decimal"/>
-                    <xs:element name="don_vi"          type="xs:string"/>
-                    <xs:element name="gia"             type="xs:decimal"/>
-                    <xs:element name="ma_nha_cung_cap" type="xs:string"/>
+                    <xs:element name="ma_nguyen_lieu" type="tns:MaNguyenLieuType"/>
+                    <xs:element name="ten_nguyen_lieu" type="tns:TenType"/>
+                    <xs:element name="loai" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Vải"/>
+                          <xs:enumeration value="Phụ kiện"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="so_luong_ton" type="tns:SoLuongType"/>
+                    <xs:element name="don_vi" type="tns:DonViTinhType"/>
+                    <xs:element name="gia"             type="tns:TienType"/>
+                    <xs:element name="ma_nha_cung_cap" type="tns:MaNhaCungCapType"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -281,11 +449,11 @@
               <xs:element name="SanPhamNguyenLieu" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_san_pham_nguyen_lieu" type="xs:string"/>
-                    <xs:element name="ma_san_pham"            type="xs:string"/>
-                    <xs:element name="ma_nguyen_lieu"         type="xs:string"/>
-                    <xs:element name="so_luong"               type="xs:decimal"/>
-                    <xs:element name="don_vi"                 type="xs:string"/>
+                    <xs:element name="ma_san_pham_nguyen_lieu" type="tns:MaSanPhamNguyenLieuType"/>
+                    <xs:element name="ma_san_pham"            type="tns:MaSanPhamType"/>
+                    <xs:element name="ma_nguyen_lieu"         type="tns:MaNguyenLieuType"/>
+                    <xs:element name="so_luong"               type="tns:SoLuongType"/>
+                    <xs:element name="don_vi"                 type="tns:DonViTinhType"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -297,7 +465,6 @@
     </xs:complexType>
 
     <!-- ===================== KEYS ===================== -->
-    <!-- Lưu ý: dùng prefix tns: trong XPath để tham chiếu đúng namespace -->
     <xs:key name="PK_KhachHang">
       <xs:selector xpath="tns:KhachHangs/tns:KhachHang"/>
       <xs:field    xpath="tns:ma_khach_hang"/>
