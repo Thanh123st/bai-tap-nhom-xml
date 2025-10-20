@@ -380,8 +380,8 @@
               <xs:element name="DanhMuc" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="ma_danh_muc"  type="xs:string"/>
-                    <xs:element name="ten_danh_muc" type="xs:string"/>
+                    <xs:element name="ma_danh_muc"  type="tns:MaDanhMucType"/>
+                    <xs:element name="ten_danh_muc" type="tns:TenType"/>
                     <xs:element name="mo_ta"        type="xs:string" minOccurs="0"/>
                   </xs:sequence>
                 </xs:complexType>
