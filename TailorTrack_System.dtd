@@ -33,7 +33,7 @@
 <!ELEMENT ChiTietDonHang (ma_chi_tiet_don_hang, so_luong, gia_don_vi, ma_don_hang, ma_san_pham, loai_san_pham?, trang_thai?, mo_ta?)>
 
 <!-- ===== SanPham ===== -->
-<!ELEMENT SanPham (ma_san_pham, ten_san_pham, mo_ta?, kich_co?, mau_sac?, gia, so_luong_ton, tu_san_xuat, trang_thai?, ma_thuong_hieu?, ma_danh_muc)>
+<!ELEMENT SanPham (ma_san_pham, ten_san_pham, mo_ta?, kich_co?, mau_sac?, gia, so_luong_ton, tu_san_xuat, trang_thai?, ma_danh_muc)>
 
 <!-- ===== TonKho ===== -->
 <!ELEMENT TonKho (ma_ton_kho, so_luong_ton, ngay_cap_nhat, ma_san_pham, ma_nha_cung_cap)>
@@ -85,7 +85,6 @@
 <!ELEMENT gia (#PCDATA)>
 <!ELEMENT so_luong_ton (#PCDATA)>
 <!ELEMENT tu_san_xuat (#PCDATA)>
-<!ELEMENT ma_thuong_hieu (#PCDATA)>
 <!ELEMENT ma_danh_muc (#PCDATA)>
 <!ELEMENT ma_ton_kho (#PCDATA)>
 <!ELEMENT ngay_cap_nhat (#PCDATA)>

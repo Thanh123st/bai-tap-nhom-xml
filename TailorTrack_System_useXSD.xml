@@ -337,7 +337,6 @@
       <so_luong_ton>120</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR001</ma_thuong_hieu>
       <ma_danh_muc>DM001</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -350,7 +349,6 @@
       <so_luong_ton>80</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR001</ma_thuong_hieu>
       <ma_danh_muc>DM001</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -363,7 +361,6 @@
       <so_luong_ton>40</so_luong_ton>
       <tu_san_xuat>true</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR002</ma_thuong_hieu>
       <ma_danh_muc>DM002</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -376,7 +373,6 @@
       <so_luong_ton>60</so_luong_ton>
       <tu_san_xuat>true</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR002</ma_thuong_hieu>
       <ma_danh_muc>DM002</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -389,7 +385,6 @@
       <so_luong_ton>25</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR003</ma_thuong_hieu>
       <ma_danh_muc>DM005</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -402,7 +397,6 @@
       <so_luong_ton>25</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR003</ma_thuong_hieu>
       <ma_danh_muc>DM005</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -415,7 +409,6 @@
       <so_luong_ton>25</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR003</ma_thuong_hieu>
       <ma_danh_muc>DM005</ma_danh_muc>
     </SanPham>
   </SanPhams>

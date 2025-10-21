@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE TailorTrackSystem SYSTEM "TailorTrack_System.dtd">
 
-<TailorTrackSystem>
+<TailorTrackSystem >
   <!-- ===== KhachHang ===== -->
   <KhachHangs>
     <KhachHang>
@@ -68,7 +68,7 @@
       <diem_tich_luy>95</diem_tich_luy>
     </KhachHang>
   </KhachHangs>
-
+  
   <!-- ===== NhanVien ===== -->
   <NhanViens>
     <NhanVien>
@@ -135,7 +135,7 @@
       <ngay_tuyen>2025-06-05</ngay_tuyen>
     </NhanVien>
   </NhanViens>
-
+  
   <!-- ===== DonHang — FK -> KhachHang ===== -->
   <DonHangs>
     <DonHang>
@@ -195,7 +195,7 @@
       <mo_ta_yeu_cau/>
     </DonHang>
   </DonHangs>
-
+  
   <!-- ===== DonHangNhanVien — FK -> DonHang, NhanVien ===== -->
   <DonHangNhanViens>
     <DonHangNhanVien>
@@ -248,7 +248,7 @@
       <ghi_chu/>
     </DonHangNhanVien>
   </DonHangNhanViens>
-
+  
   <!-- ===== ChiTietDonHang — FK -> DonHang, SanPham ===== -->
   <ChiTietDonHangs>
     <ChiTietDonHang>
@@ -322,7 +322,7 @@
       <mo_ta/>
     </ChiTietDonHang>
   </ChiTietDonHangs>
-
+  
   <!-- ===== SanPham  — FK -> DanhMuc ===== -->
   <SanPhams>
     <SanPham>
@@ -335,7 +335,6 @@
       <so_luong_ton>120</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR001</ma_thuong_hieu>
       <ma_danh_muc>DM001</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -348,7 +347,6 @@
       <so_luong_ton>80</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR001</ma_thuong_hieu>
       <ma_danh_muc>DM001</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -361,7 +359,6 @@
       <so_luong_ton>40</so_luong_ton>
       <tu_san_xuat>true</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR002</ma_thuong_hieu>
       <ma_danh_muc>DM002</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -374,7 +371,6 @@
       <so_luong_ton>60</so_luong_ton>
       <tu_san_xuat>true</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR002</ma_thuong_hieu>
       <ma_danh_muc>DM002</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -387,7 +383,6 @@
       <so_luong_ton>25</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR003</ma_thuong_hieu>
       <ma_danh_muc>DM005</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -400,7 +395,6 @@
       <so_luong_ton>25</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR003</ma_thuong_hieu>
       <ma_danh_muc>DM005</ma_danh_muc>
     </SanPham>
     <SanPham>
@@ -413,11 +407,10 @@
       <so_luong_ton>25</so_luong_ton>
       <tu_san_xuat>false</tu_san_xuat>
       <trang_thai>available</trang_thai>
-      <ma_thuong_hieu>BR003</ma_thuong_hieu>
       <ma_danh_muc>DM005</ma_danh_muc>
     </SanPham>
   </SanPhams>
-
+  
   <!-- ===== TonKho (7) — FK -> SanPham, NhaCungCap ===== -->
   <TonKhos>
     <TonKho>
@@ -470,7 +463,7 @@
       <ma_nha_cung_cap>NCC005</ma_nha_cung_cap>
     </TonKho>
   </TonKhos>
-
+  
   <!-- ===== NhaCungCap ===== -->
   <NhaCungCaps>
     <NhaCungCap>
@@ -530,7 +523,7 @@
       <dia_chi>Bà Rịa Vũng Tàu</dia_chi>
     </NhaCungCap>
   </NhaCungCaps>  
-
+  
   <!-- ===== DanhMuc ===== -->
   <DanhMucs>
     <DanhMuc>
@@ -569,7 +562,7 @@
       <mo_ta>Gói bộ đồ</mo_ta>
     </DanhMuc>
   </DanhMucs>
-
+  
   <!-- ===== ThanhToan — FK -> DonHang ===== -->
   <ThanhToans>
     <ThanhToan>
@@ -622,7 +615,7 @@
       <ma_don_hang>DH007</ma_don_hang>
     </ThanhToan>
   </ThanhToans>
-
+  
   <!-- ===== NguyenLieu — FK -> NhaCungCap ===== -->
   <NguyenLieus>
     <NguyenLieu>
@@ -689,7 +682,7 @@
       <ma_nha_cung_cap>NCC007</ma_nha_cung_cap>
     </NguyenLieu>
   </NguyenLieus>  
-
+  
   <!-- ===== SanPhamNguyenLieu — FK -> SanPham, NguyenLieu ===== -->
   <SanPhamNguyenLieus>
     <SanPhamNguyenLieu>
