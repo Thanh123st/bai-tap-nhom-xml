@@ -1,23 +1,75 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "Sản phẩm và nguyên liệu",
-    "type": "object",
-    "properties": {
-      "ma_san_pham": { "type": "string", "pattern": "^SP[0-9]{3}$" },
-      "ten_san_pham": { "type": "string" },
-      "gia": { "type": "number", "minimum": 0 },
-      "nguyen_lieu_su_dung": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "ma_nguyen_lieu": { "type": "string" },
-            "ten_nguyen_lieu": { "type": "string" }
-          },
-          "required": ["ma_nguyen_lieu", "ten_nguyen_lieu"]
-        }
-      }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sản phẩm kèm theo nguyên liệu",
+  "type": "object",
+  "properties": {
+    "ma_san_pham": {
+      "type": "string",
+      "pattern": "^SP[0-9]{3}$"
     },
-    "required": ["ma_san_pham", "ten_san_pham", "nguyen_lieu_su_dung"]
-  }
-  
+    "ten_san_pham": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100
+    },
+    "mo_ta": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "kich_co": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "mau_sac": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "gia": {
+      "type": "number",
+      "minimum": 0,
+      "multipleOf": 0.01
+    },
+    "so_luong_ton": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "tu_san_xuat": {
+      "type": "boolean"
+    },
+    "trang_thai": {
+      "type": "string",
+      "enum": ["available", "out_of_stock", "discontinued", "draft", "coming_soon"]
+    },
+    "ma_danh_muc": {
+      "type": "string",
+      "pattern": "^DM[0-9]{3}$"
+    },
+    "nguyen_lieus": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ma_nguyen_lieu": { "type": "string", "pattern": "^NL[0-9]{3}$" },
+          "ten_nguyen_lieu": { "type": "string", "minLength": 2, "maxLength": 100 },
+          "loai": { "type": "string", "enum": ["Vải", "Phụ kiện"] },
+          "so_luong_ton": { "type": "integer", "minimum": 0 },
+          "don_vi": { "type": "string", "maxLength": 20 },
+          "gia": { "type": "number", "minimum": 0, "multipleOf": 0.01 },
+          "nha_cung_cap": {
+            "type": "object",
+            "properties": {
+              "ma_nha_cung_cap": { "type": "string", "pattern": "^NCC[0-9]{3}$" },
+              "ten_nha_cung_cap": { "type": "string", "minLength": 2, "maxLength": 100 }
+            },
+            "required": ["ma_nha_cung_cap", "ten_nha_cung_cap"]
+          },
+          "so_luong_su_dung": { "type": "number", "minimum": 0, "multipleOf": 0.01 },
+          "don_vi_su_dung": { "type": "string", "maxLength": 20 }
+        },
+        "required": ["ma_nguyen_lieu", "ten_nguyen_lieu", "gia", "so_luong_su_dung"]
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["ma_san_pham", "ten_san_pham", "gia", "nguyen_lieus"]
+}

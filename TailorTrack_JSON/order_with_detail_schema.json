@@ -1,39 +1,107 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "Đơn hàng và chi tiết",
-    "type": "object",
-    "properties": {
-      "ma_don_hang": { "type": "string", "pattern": "^DH[0-9]{3}$" },
-      "ngay_dat": { "type": "string", "format": "date" },
-      "trang_thai": { "type": "string", "enum": ["pending", "paid", "canceled"] },
-      "tong_tien": { "type": "number", "minimum": 0 },
-      "khach_hang": {
-        "type": "object",
-        "properties": {
-          "ma_khach_hang": { "type": "string" },
-          "ho_ten": { "type": "string" }
-        }
-      },
-      "nhan_vien_phu_trach": {
-        "type": "object",
-        "properties": {
-          "ma_nhan_vien": { "type": "string" },
-          "ho_ten": { "type": "string" }
-        }
-      },
-      "chi_tiet_don_hang": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "ma_san_pham": { "type": "string" },
-            "so_luong": { "type": "integer", "minimum": 1 },
-            "don_gia": { "type": "number" }
-          },
-          "required": ["ma_san_pham", "so_luong", "don_gia"]
-        }
-      }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Chi tiết đơn hàng (Response Schema)",
+  "type": "object",
+  "properties": {
+    "ma_don_hang": {
+      "type": "string",
+      "pattern": "^DH[0-9]{3}$"
     },
-    "required": ["ma_don_hang", "trang_thai", "khach_hang", "chi_tiet_don_hang"]
-  }
-  
+    "ngay_dat": {
+      "type": "string",
+      "format": "date"
+    },
+    "tong_tien": {
+      "type": "number",
+      "minimum": 0,
+      "multipleOf": 0.01
+    },
+    "trang_thai": {
+      "type": "string",
+      "enum": ["pending", "paid", "shipped", "delivered", "canceled"]
+    },
+    "khach_hang": {
+      "type": "object",
+      "properties": {
+        "ma_khach_hang": {
+          "type": "string",
+          "pattern": "^KH[0-9]{3}$"
+        },
+        "ho_ten": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 100
+        }
+      },
+      "required": ["ma_khach_hang", "ho_ten"]
+    },
+    "nhan_vien_phu_trach": {
+      "type": "object",
+      "properties": {
+        "ma_nhan_vien": {
+          "type": "string",
+          "pattern": "^NV[0-9]{3}$"
+        },
+        "ho_ten": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 100
+        }
+      },
+      "required": ["ma_nhan_vien", "ho_ten"]
+    },
+    "chi_tiet_don_hang": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "ma_chi_tiet_don_hang": {
+            "type": "string",
+            "pattern": "^CTDH[0-9]{3}$"
+          },
+          "so_luong": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "gia_don_vi": {
+            "type": "number",
+            "minimum": 0,
+            "multipleOf": 0.01
+          },
+          "ma_san_pham": {
+            "type": "string",
+            "pattern": "^SP[0-9]{3}$"
+          },
+          "loai_san_pham": {
+            "type": "string",
+            "enum": [
+              "áo",
+              "quần",
+              "váy",
+              "đầm",
+              "bộ",
+              "áo Khóac",
+              "đồ lót",
+              "phụ kiện",
+              "khác"
+            ]
+          },
+          "trang_thai": {
+            "type": "string",
+            "enum": ["pending", "processing", "done", "canceled", "returned"]
+          }
+        },
+        "required": [
+          "ma_chi_tiet_don_hang",
+          "so_luong",
+          "gia_don_vi",
+          "ma_san_pham",
+          "loai_san_pham",
+          "trang_thai"
+        ]
+      }
+    }
+  },
+  "required": ["ma_don_hang", "ngay_dat", "trang_thai", "tong_tien", "chi_tiet_don_hang"]
+}

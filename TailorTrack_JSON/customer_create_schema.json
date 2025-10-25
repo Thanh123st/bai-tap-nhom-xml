@@ -1,15 +1,28 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "Tạo khách hàng mới",
-    "type": "object",
-    "properties": {
-      "ma_khach_hang": { "type": "string", "pattern": "^KH[0-9]{3}$" },
-      "ho_ten": { "type": "string", "minLength": 2 },
-      "email": { "type": "string", "format": "email" },
-      "so_dien_thoai": { "type": "string", "pattern": "^[0-9]{10}$" },
-      "dia_chi": { "type": "string" },
-      "ngay_dang_ky": { "type": "string", "format": "date" }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tạo khách hàng mới",
+  "type": "object",
+  "properties": {
+    "ma_khach_hang": {
+      "type": "string",
+      "pattern": "^KH[0-9]{3}$",
+      "description": "Không bắt buộc nhập"
     },
-    "required": ["ma_khach_hang", "ho_ten", "email"]
-  }
-  
+    "ho_ten": { "type": "string", "minLength": 2 },
+    "email": { "type": "string", "format": "email" },
+    "so_dien_thoai": { "type": "string", "pattern": "^[0-9]{10}$" },
+    "dia_chi": { 
+      "type": "string", 
+      "minLength": 5, 
+      "maxLength": 100 
+    },
+    "ngay_dang_ky": { "type": "string", "format": "date" }
+  },
+  "required": [
+    "ho_ten",
+    "email",
+    "so_dien_thoai",
+    "dia_chi",
+    "ngay_dang_ky"
+  ]
+}

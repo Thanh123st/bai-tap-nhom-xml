@@ -1,9 +1,7 @@
 {
-    "ma_khach_hang": "KH006",
-    "ho_ten": "Trần Thị Mai",
-    "email": "maitt@gmail.com",
-    "so_dien_thoai": "0912345678",
-    "dia_chi": "Ninh Kiều, Cần Thơ",
-    "ngay_dang_ky": "2025-10-25"
-  }
-  
+  "ho_ten": "Trần Thị Mai",
+  "email": "maitt@gmail.com",
+  "so_dien_thoai": "0912345678",
+  "dia_chi": "Ninh Kiều, Cần Thơ",
+  "ngay_dang_ky": "2025-10-25"
+}

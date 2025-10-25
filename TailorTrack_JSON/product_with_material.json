@@ -1,10 +1,39 @@
 {
-    "ma_san_pham": "SP003",
-    "ten_san_pham": "Áo sơ mi trắng",
-    "gia": 180000,
-    "nguyen_lieu_su_dung": [
-      { "ma_nguyen_lieu": "NL001", "ten_nguyen_lieu": "Vải cotton" },
-      { "ma_nguyen_lieu": "NL004", "ten_nguyen_lieu": "Nút nhựa trắng" }
-    ]
-  }
-  
+  "ma_san_pham": "SP001",
+  "ten_san_pham": "Áo sơ mi nam trắng",
+  "gia": 250000,
+  "so_luong_ton": 50,
+  "tu_san_xuat": true,
+  "trang_thai": "available",
+  "ma_danh_muc": "DM001",
+  "nguyen_lieus": [
+    {
+      "ma_nguyen_lieu": "NL001",
+      "ten_nguyen_lieu": "Vải cotton",
+      "loai": "Vải",
+      "so_luong_ton": 200,
+      "don_vi": "mét",
+      "gia": 50000,
+      "nha_cung_cap": {
+        "ma_nha_cung_cap": "NCC003",
+        "ten_nha_cung_cap": "Công ty Vải Sài Gòn"
+      },
+      "so_luong_su_dung": 2,
+      "don_vi_su_dung": "mét"
+    },
+    {
+      "ma_nguyen_lieu": "NL004",
+      "ten_nguyen_lieu": "Cúc áo nhựa",
+      "loai": "Phụ kiện",
+      "so_luong_ton": 1000,
+      "don_vi": "cái",
+      "gia": 200,
+      "nha_cung_cap": {
+        "ma_nha_cung_cap": "NCC001",
+        "ten_nha_cung_cap": "Phụ kiện An Phát"
+      },
+      "so_luong_su_dung": 5,
+      "don_vi_su_dung": "cái"
+    }
+  ]
+}

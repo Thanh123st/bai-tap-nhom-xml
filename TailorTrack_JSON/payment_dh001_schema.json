@@ -1,14 +1,38 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "Thanh toán đơn hàng",
-    "type": "object",
-    "properties": {
-      "ma_thanh_toan": { "type": "string", "pattern": "^TT[0-9]{3}$" },
-      "ma_don_hang": { "type": "string", "pattern": "^DH[0-9]{3}$" },
-      "phuong_thuc": { "type": "string", "enum": ["cash", "card", "transfer"] },
-      "so_tien": { "type": "number", "minimum": 0 },
-      "ngay_thanh_toan": { "type": "string", "format": "date" }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Thông tin thanh toán của đơn hàng",
+  "type": "object",
+  "properties": {
+    "ma_don_hang": {
+      "type": "string",
+      "pattern": "^DH[0-9]{3}$"
     },
-    "required": ["ma_thanh_toan", "ma_don_hang", "phuong_thuc"]
-  }
-  
+    "thanh_toans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ma_thanh_toan": {
+            "type": "string",
+            "pattern": "^TT[0-9]{3}$"
+          },
+          "ngay_thanh_toan": {
+            "type": "string",
+            "format": "date"
+          },
+          "so_tien": {
+            "type": "number",
+            "minimum": 0
+          },
+          "phuong_thuc": {
+            "type": "string",
+            "enum": ["cash", "card", "none"]
+          }
+        },
+        "required": ["ma_thanh_toan", "ngay_thanh_toan", "so_tien", "phuong_thuc"]
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["ma_don_hang", "thanh_toans"]
+}

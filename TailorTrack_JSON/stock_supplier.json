@@ -1,9 +1,24 @@
 {
-    "ma_nguyen_lieu": "NL005",
-    "ten_nguyen_lieu": "Vải thun lạnh",
-    "so_luong_ton": 120,
-    "don_vi": "mét",
-    "ma_nha_cung_cap": "NCC002",
-    "ten_nha_cung_cap": "Công ty Dệt May Trung Việt"
-  }
-  
+  "ma_nha_cung_cap": "NCC003",
+  "ten_nha_cung_cap": "Công ty Vải Sài Gòn",
+  "nguoi_lien_he": "Nguyễn Văn Long",
+  "email": "contact@vaisaigon.vn",
+  "dien_thoai": "0909123456",
+  "dia_chi": "123 Nguyễn Trãi, Quận 5, TP.HCM",
+  "ton_kho": [
+    {
+      "ma_ton_kho": "TK001",
+      "ma_san_pham": "SP001",
+      "ten_san_pham": "Áo sơ mi trắng",
+      "so_luong_ton": 150,
+      "ngay_cap_nhat": "2025-10-22"
+    },
+    {
+      "ma_ton_kho": "TK002",
+      "ma_san_pham": "SP002",
+      "ten_san_pham": "Quần tây nam",
+      "so_luong_ton": 90,
+      "ngay_cap_nhat": "2025-10-21"
+    }
+  ]
+}

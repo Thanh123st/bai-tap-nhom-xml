@@ -1,13 +1,26 @@
 {
-    "ma_don_hang": "DH001",
-    "ngay_dat": "2025-10-22",
-    "trang_thai": "paid",
-    "tong_tien": 350000,
-    "khach_hang": { "ma_khach_hang": "KH002", "ho_ten": "Lê Văn Long" },
-    "nhan_vien_phu_trach": { "ma_nhan_vien": "NV005", "ho_ten": "Nguyễn Hữu Lộc" },
-    "chi_tiet_don_hang": [
-      { "ma_san_pham": "SP001", "so_luong": 2, "don_gia": 150000 },
-      { "ma_san_pham": "SP003", "so_luong": 1, "don_gia": 50000 }
-    ]
-  }
-  
+  "ma_don_hang": "DH001",
+  "ngay_dat": "2025-10-22",
+  "trang_thai": "paid",
+  "tong_tien": 350000,
+  "khach_hang": { "ma_khach_hang": "KH002", "ho_ten": "Lê Văn Long" },
+  "nhan_vien_phu_trach": { "ma_nhan_vien": "NV005", "ho_ten": "Nguyễn Hữu Lộc" },
+  "chi_tiet_don_hang": [
+    {
+      "ma_chi_tiet_don_hang": "CTDH001",
+      "so_luong": 2,
+      "gia_don_vi": 150000,
+      "ma_san_pham": "SP001",
+      "loai_san_pham": "áo",
+      "trang_thai": "done"
+    },
+    {
+      "ma_chi_tiet_don_hang": "CTDH002",
+      "so_luong": 1,
+      "gia_don_vi": 50000,
+      "ma_san_pham": "SP003",
+      "loai_san_pham": "phụ kiện",
+      "trang_thai": "processing"
+    }
+  ]
+}

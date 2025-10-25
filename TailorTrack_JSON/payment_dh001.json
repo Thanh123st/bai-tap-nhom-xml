@@ -1,8 +1,17 @@
 {
-    "ma_thanh_toan": "TT001",
-    "ma_don_hang": "DH001",
-    "phuong_thuc": "card",
-    "so_tien": 250000,
-    "ngay_thanh_toan": "2025-10-20"
-  }
-  
+  "ma_don_hang": "DH001",
+  "thanh_toans": [
+    {
+      "ma_thanh_toan": "TT001",
+      "ngay_thanh_toan": "2025-10-22",
+      "so_tien": 200000,
+      "phuong_thuc": "card"
+    },
+    {
+      "ma_thanh_toan": "TT002",
+      "ngay_thanh_toan": "2025-10-23",
+      "so_tien": 150000,
+      "phuong_thuc": "cash"
+    }
+  ]
+}
