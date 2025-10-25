@@ -5,7 +5,7 @@
            xmlns="http://www.ctut.edu.vn/material"
            elementFormDefault="qualified">
 
-
+  <!-- Các kiểu chi tiết -->
   <xs:simpleType name="HoTenType">
     <xs:restriction base="xs:string">
       <xs:minLength value="2"/>
@@ -28,7 +28,7 @@
 
   <xs:simpleType name="PhoneType">
     <xs:restriction base="xs:string">
-      <xs:pattern value="[0-9]{9,11}"/>
+      <xs:pattern value="0\d{9,10}"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -144,7 +144,6 @@
     </xs:restriction>
   </xs:simpleType>
   
-
           
   <!-- ==================== ROOT ==================== -->
   <xs:element name="TailorTrackSystem">
@@ -328,7 +327,6 @@
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
-                    <xs:element name="ma_thuong_hieu" type="tns:MaThuongHieuType" minOccurs="0"/>
                     <xs:element name="ma_danh_muc"   type="tns:MaDanhMucType"/>
                   </xs:sequence>
                 </xs:complexType>
