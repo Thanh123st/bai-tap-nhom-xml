@@ -1,0 +1,39 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Đơn hàng và chi tiết",
+    "type": "object",
+    "properties": {
+      "ma_don_hang": { "type": "string", "pattern": "^DH[0-9]{3}$" },
+      "ngay_dat": { "type": "string", "format": "date" },
+      "trang_thai": { "type": "string", "enum": ["pending", "paid", "canceled"] },
+      "tong_tien": { "type": "number", "minimum": 0 },
+      "khach_hang": {
+        "type": "object",
+        "properties": {
+          "ma_khach_hang": { "type": "string" },
+          "ho_ten": { "type": "string" }
+        }
+      },
+      "nhan_vien_phu_trach": {
+        "type": "object",
+        "properties": {
+          "ma_nhan_vien": { "type": "string" },
+          "ho_ten": { "type": "string" }
+        }
+      },
+      "chi_tiet_don_hang": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ma_san_pham": { "type": "string" },
+            "so_luong": { "type": "integer", "minimum": 1 },
+            "don_gia": { "type": "number" }
+          },
+          "required": ["ma_san_pham", "so_luong", "don_gia"]
+        }
+      }
+    },
+    "required": ["ma_don_hang", "trang_thai", "khach_hang", "chi_tiet_don_hang"]
+  }
+  

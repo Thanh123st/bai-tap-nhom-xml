@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Sản phẩm và nguyên liệu",
+    "type": "object",
+    "properties": {
+      "ma_san_pham": { "type": "string", "pattern": "^SP[0-9]{3}$" },
+      "ten_san_pham": { "type": "string" },
+      "gia": { "type": "number", "minimum": 0 },
+      "nguyen_lieu_su_dung": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ma_nguyen_lieu": { "type": "string" },
+            "ten_nguyen_lieu": { "type": "string" }
+          },
+          "required": ["ma_nguyen_lieu", "ten_nguyen_lieu"]
+        }
+      }
+    },
+    "required": ["ma_san_pham", "ten_san_pham", "nguyen_lieu_su_dung"]
+  }
+  

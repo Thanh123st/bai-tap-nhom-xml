@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Tạo khách hàng mới",
+    "type": "object",
+    "properties": {
+      "ma_khach_hang": { "type": "string", "pattern": "^KH[0-9]{3}$" },
+      "ho_ten": { "type": "string", "minLength": 2 },
+      "email": { "type": "string", "format": "email" },
+      "so_dien_thoai": { "type": "string", "pattern": "^[0-9]{10}$" },
+      "dia_chi": { "type": "string" },
+      "ngay_dang_ky": { "type": "string", "format": "date" }
+    },
+    "required": ["ma_khach_hang", "ho_ten", "email"]
+  }
+  

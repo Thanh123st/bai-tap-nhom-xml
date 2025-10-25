@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Tồn kho và nhà cung cấp",
+    "type": "object",
+    "properties": {
+      "ma_nguyen_lieu": { "type": "string", "pattern": "^NL[0-9]{3}$" },
+      "ten_nguyen_lieu": { "type": "string" },
+      "so_luong_ton": { "type": "integer", "minimum": 0 },
+      "don_vi": { "type": "string" },
+      "ma_nha_cung_cap": { "type": "string", "pattern": "^NCC[0-9]{3}$" },
+      "ten_nha_cung_cap": { "type": "string" }
+    },
+    "required": ["ma_nguyen_lieu", "ten_nguyen_lieu", "so_luong_ton"]
+  }
+  

@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Tạo nhân viên mới",
+    "type": "object",
+    "properties": {
+      "ma_nhan_vien": { "type": "string", "pattern": "^NV[0-9]{3}$" },
+      "ho_ten": { "type": "string" },
+      "chuc_vu": { "type": "string", "enum": ["Quản lý", "Thu ngân", "Thợ may", "Bảo vệ"] },
+      "luong": { "type": "number", "minimum": 3000000 },
+      "ngay_vao_lam": { "type": "string", "format": "date" }
+    },
+    "required": ["ma_nhan_vien", "ho_ten", "chuc_vu"]
+  }
+  

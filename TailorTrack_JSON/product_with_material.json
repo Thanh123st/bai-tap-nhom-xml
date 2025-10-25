@@ -1,0 +1,10 @@
+{
+    "ma_san_pham": "SP003",
+    "ten_san_pham": "Áo sơ mi trắng",
+    "gia": 180000,
+    "nguyen_lieu_su_dung": [
+      { "ma_nguyen_lieu": "NL001", "ten_nguyen_lieu": "Vải cotton" },
+      { "ma_nguyen_lieu": "NL004", "ten_nguyen_lieu": "Nút nhựa trắng" }
+    ]
+  }
+  

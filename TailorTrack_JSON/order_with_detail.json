@@ -1,0 +1,13 @@
+{
+    "ma_don_hang": "DH001",
+    "ngay_dat": "2025-10-22",
+    "trang_thai": "paid",
+    "tong_tien": 350000,
+    "khach_hang": { "ma_khach_hang": "KH002", "ho_ten": "Lê Văn Long" },
+    "nhan_vien_phu_trach": { "ma_nhan_vien": "NV005", "ho_ten": "Nguyễn Hữu Lộc" },
+    "chi_tiet_don_hang": [
+      { "ma_san_pham": "SP001", "so_luong": 2, "don_gia": 150000 },
+      { "ma_san_pham": "SP003", "so_luong": 1, "don_gia": 50000 }
+    ]
+  }
+  

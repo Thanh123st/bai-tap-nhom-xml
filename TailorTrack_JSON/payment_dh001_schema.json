@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Thanh toán đơn hàng",
+    "type": "object",
+    "properties": {
+      "ma_thanh_toan": { "type": "string", "pattern": "^TT[0-9]{3}$" },
+      "ma_don_hang": { "type": "string", "pattern": "^DH[0-9]{3}$" },
+      "phuong_thuc": { "type": "string", "enum": ["cash", "card", "transfer"] },
+      "so_tien": { "type": "number", "minimum": 0 },
+      "ngay_thanh_toan": { "type": "string", "format": "date" }
+    },
+    "required": ["ma_thanh_toan", "ma_don_hang", "phuong_thuc"]
+  }
+  
