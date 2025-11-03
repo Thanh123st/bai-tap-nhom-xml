@@ -18,11 +18,13 @@
     },
     "email": {
       "type": "string",
-      "format": "email"
+      "format": "email",
+      "minLength": 6,
+      "maxLength": 100
     },
     "dien_thoai": {
       "type": "string",
-      "pattern": "^[0-9]{9,11}$"
+      "pattern": "^0[0-9]{9,10}$"
     },
     "dia_chi": {
       "type": "string",
@@ -30,6 +32,9 @@
     },
     "ton_kho": {
       "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "maxItems": 100,
       "items": {
         "type": "object",
         "properties": {
@@ -55,10 +60,11 @@
             "maxLength": 100
           }
         },
-        "required": ["ma_ton_kho", "so_luong_ton", "ngay_cap_nhat", "ma_san_pham"]
-      },
-      "minItems": 1
+        "required": ["ma_ton_kho", "so_luong_ton", "ngay_cap_nhat", "ma_san_pham"],
+        "additionalProperties": false
+      }
     }
   },
-  "required": ["ma_nha_cung_cap", "ten_nha_cung_cap", "email", "dien_thoai", "ton_kho"]
+  "required": ["ma_nha_cung_cap", "ten_nha_cung_cap", "email", "dien_thoai", "ton_kho"],
+  "additionalProperties": false
 }

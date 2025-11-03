@@ -21,6 +21,14 @@
       "ma_san_pham": "SP003",
       "loai_san_pham": "phụ kiện",
       "trang_thai": "processing"
+    },
+    {
+      "ma_chi_tiet_don_hang": "CTDH003",
+      "so_luong": 2,
+      "gia_don_vi": 80000,
+      "ma_san_pham": "SP004",
+      "loai_san_pham": "áo",
+      "trang_thai": "canceled"
     }
   ]
 }

@@ -1,7 +1,30 @@
-{
-  "ho_ten": "Trần Thị Mai",
-  "email": "maitt@gmail.com",
-  "so_dien_thoai": "0912345678",
-  "dia_chi": "Ninh Kiều, Cần Thơ",
-  "ngay_dang_ky": "2025-10-25"
-}
+[
+  {
+    "ho_ten": "Trần Thị Mai",
+    "email": "maitt@gmail.com",
+    "so_dien_thoai": "0912345678",
+    "dia_chi": "Ninh Kiều, Cần Thơ",
+    "ngay_dang_ky": "2025-10-25"
+  },
+  {
+    "ho_ten": "Nguyễn Văn An",
+    "email": "an.nguyen@gmail.com",
+    "so_dien_thoai": "0901234567",
+    "dia_chi": "Cái Răng, Cần Thơ",
+    "ngay_dang_ky": "2025-10-25"
+  },
+  {
+    "ho_ten": "Lê Thị Bích Ngọc",
+    "email": "ngoclth@gmail.com",
+    "so_dien_thoai": "0934567890",
+    "dia_chi": "Ô Môn, Cần Thơ",
+    "ngay_dang_ky": "2025-10-26"
+  },
+  {
+    "ho_ten": "Phạm Minh Hoàng",
+    "email": "hoangpm@gmail.com",
+    "so_dien_thoai": "0976543210",
+    "dia_chi": "Thốt Nốt, Cần Thơ",
+    "ngay_dang_ky": "2025-10-26"
+  }
+]

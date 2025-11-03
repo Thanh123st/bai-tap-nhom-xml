@@ -1,0 +1,29 @@
+{
+    "json.schemas": [
+      {
+        "fileMatch": ["TailorTrack_JSON/customer_create.json"],
+        "url": "./TailorTrack_JSON/customer_create_schema.json"
+      },
+      {
+        "fileMatch": ["TailorTrack_JSON/employee_create.json"],
+        "url": "./TailorTrack_JSON/employee_create_schema.json"
+      },
+      {
+        "fileMatch": ["TailorTrack_JSON/payment_dh001.json"],
+        "url": "./TailorTrack_JSON/payment_dh001_schema.json"
+      },
+      {
+        "fileMatch": ["TailorTrack_JSON/stock_supplier.json"],
+        "url": "./TailorTrack_JSON/stock_supplier_schema.json"
+      },
+      {
+        "fileMatch": ["TailorTrack_JSON/product_with_material.json"],
+        "url": "./TailorTrack_JSON/product_with_material_schema.json"
+      },
+      {
+        "fileMatch": ["TailorTrack_JSON/order_with_detail.json"],
+        "url": "./TailorTrack_JSON/order_with_detail_schema.json"
+      }
+    ]
+  }
+  

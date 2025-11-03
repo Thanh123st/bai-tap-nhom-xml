@@ -19,6 +19,13 @@
       "ten_san_pham": "Quần tây nam",
       "so_luong_ton": 90,
       "ngay_cap_nhat": "2025-10-21"
+    },
+    {
+      "ma_ton_kho": "TK003",
+      "ma_san_pham": "SP003",
+      "ten_san_pham": "Áo phông trắng",
+      "so_luong_ton": 100,
+      "ngay_cap_nhat": "2025-10-20"
     }
   ]
 }

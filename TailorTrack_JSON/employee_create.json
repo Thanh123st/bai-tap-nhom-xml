@@ -1,8 +1,34 @@
-{
-  "ho_ten": "Nguyễn Hữu Lộc",
-  "email": "nhloc@ctut.edu.vn",
-  "so_dien_thoai": "0909123456",
-  "chuc_vu": "Thu ngân",
-  "luong": 12000000,
-  "ngay_tuyen": "2025-09-01"
-}
+[
+  {
+    "ho_ten": "Nguyễn Hữu Lộc",
+    "email": "nhloc@ctut.edu.vn",
+    "so_dien_thoai": "0909123456",
+    "chuc_vu": "Thu ngân",
+    "luong": 12000000,
+    "ngay_tuyen": "2025-09-01"
+  },
+  {
+    "ho_ten": "Lê Thị Hồng",
+    "email": "hong.le@ctut.edu.vn",
+    "so_dien_thoai": "0912345678",
+    "chuc_vu": "Tư vấn viên",
+    "luong": 9500000,
+    "ngay_tuyen": "2025-08-15"
+  },
+  {
+    "ho_ten": "Phạm Quốc Thịnh",
+    "email": "thinhpq@ctut.edu.vn",
+    "so_dien_thoai": "0922233344",
+    "chuc_vu": "Quản lý kho",
+    "luong": 15000000,
+    "ngay_tuyen": "2024-11-12"
+  },
+  {
+    "ho_ten": "Trần Ngọc Dung",
+    "email": "dungtn@ctut.edu.vn",
+    "so_dien_thoai": "0933355566",
+    "chuc_vu": "Chăm sóc khách hàng",
+    "luong": 8800000,
+    "ngay_tuyen": "2025-01-05"
+  }
+]

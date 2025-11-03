@@ -1,60 +1,63 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Tạo nhân viên mới (Theo XSD)",
-  "type": "object",
-  "properties": {
-    "ma_nhan_vien": {
-      "type": "string",
-      "pattern": "^NV[0-9]{3}$",
-      "description": "Tự động tạo — không bắt buộc nhập"
+  "title": "Tạo nhiều nhân viên mới (Theo XSD)",
+  "type": "array",
+  "uniqueItems": true,
+  "minItems": 1,
+  "maxItems": 50,
+  "items": {
+    "type": "object",
+    "properties": {
+      "ho_ten": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 100,
+        "description": "Họ và tên nhân viên"
+      },
+      "email": {
+        "type": "string",
+        "format": "email",
+        "maxLength": 100,
+        "description": "Email công việc hợp lệ"
+      },
+      "so_dien_thoai": {
+        "type": "string",
+        "pattern": "^0[0-9]{9,10}$",
+        "description": "Số điện thoại di động (10–11 chữ số, bắt đầu bằng 0)"
+      },
+      "chuc_vu": {
+        "type": "string",
+        "enum": [
+          "Quản lý",
+          "Tư vấn viên",
+          "Quản lý kho",
+          "Thu ngân",
+          "Chăm sóc khách hàng"
+        ],
+        "description": "Chức vụ trong hệ thống"
+      },
+      "luong": {
+        "type": "number",
+        "minimum": 3000000,
+        "maximum": 100000000,
+        "multipleOf": 0.01,
+        "description": "Mức lương tính theo VND, dạng số thập phân"
+      },
+      "ngay_tuyen": {
+        "type": "string",
+        "format": "date",
+        "description": "Ngày tuyển dụng (YYYY-MM-DD)"
+      }
     },
-    "ho_ten": {
-      "type": "string",
-      "minLength": 2,
-      "maxLength": 100,
-      "description": "Họ và tên nhân viên"
-    },
-    "email": {
-      "type": "string",
-      "format": "email",
-      "maxLength": 100,
-      "description": "Email công việc hợp lệ"
-    },
-    "so_dien_thoai": {
-      "type": "string",
-      "pattern": "^[0-9]{9,11}$",
-      "description": "Số điện thoại di động (9–11 chữ số)"
-    },
-    "chuc_vu": {
-      "type": "string",
-      "enum": [
-        "Quản lý",
-        "Tư vấn viên",
-        "Quản lý kho",
-        "Thu ngân",
-        "Chăm sóc khách hàng"
-      ],
-      "description": "Chức vụ trong hệ thống"
-    },
-    "luong": {
-      "type": "number",
-      "minimum": 3000000,
-      "maximum": 100000000,
-      "multipleOf": 0.01,
-      "description": "Mức lương tính theo VND, dạng số thập phân"
-    },
-    "ngay_tuyen": {
-      "type": "string",
-      "format": "date",
-      "description": "Ngày tuyển dụng (YYYY-MM-DD)"
-    }
+    "required": [
+      "ho_ten",
+      "email",
+      "so_dien_thoai",
+      "chuc_vu",
+      "luong",
+      "ngay_tuyen"
+    ],
+    "additionalProperties": false
   },
-  "required": [
-    "ho_ten",
-    "email",
-    "so_dien_thoai",
-    "chuc_vu",
-    "luong",
-    "ngay_tuyen"
-  ]
+  "description": "Cho phép gửi nhiều nhân viên trong một lần tạo"
 }

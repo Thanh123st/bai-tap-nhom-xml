@@ -46,6 +46,9 @@
     },
     "nguyen_lieus": {
       "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "maxItems": 100,
       "items": {
         "type": "object",
         "properties": {
@@ -61,15 +64,17 @@
               "ma_nha_cung_cap": { "type": "string", "pattern": "^NCC[0-9]{3}$" },
               "ten_nha_cung_cap": { "type": "string", "minLength": 2, "maxLength": 100 }
             },
-            "required": ["ma_nha_cung_cap", "ten_nha_cung_cap"]
+            "required": ["ma_nha_cung_cap", "ten_nha_cung_cap"],
+            "additionalProperties": false
           },
           "so_luong_su_dung": { "type": "number", "minimum": 0, "multipleOf": 0.01 },
           "don_vi_su_dung": { "type": "string", "maxLength": 20 }
         },
-        "required": ["ma_nguyen_lieu", "ten_nguyen_lieu", "gia", "so_luong_su_dung"]
-      },
-      "minItems": 1
+        "required": ["ma_nguyen_lieu", "ten_nguyen_lieu", "gia", "so_luong_su_dung"],
+        "additionalProperties": false
+      }
     }
   },
-  "required": ["ma_san_pham", "ten_san_pham", "gia", "nguyen_lieus"]
+  "required": ["ma_san_pham", "ten_san_pham", "gia", "nguyen_lieus"],
+  "additionalProperties": false
 }

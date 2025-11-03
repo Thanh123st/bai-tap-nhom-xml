@@ -80,13 +80,13 @@
         <!-- 5️⃣ Nguyên liệu từ NCC003 -->
         <h2>5. Nguyên liệu được cung cấp bởi NCC003</h2>
         <table>
-          <tr><th>Mã NL</th><th>Tên nguyên liệu</th><th>Đơn vị</th><th>Giá nhập</th></tr>
+          <tr><th>Mã NL</th><th>Tên nguyên liệu</th><th>Đơn vị</th><th>Giá</th></tr>
           <xsl:for-each select="//ns:NguyenLieu[ns:ma_nha_cung_cap='NCC003']">
             <tr>
               <td><xsl:value-of select="ns:ma_nguyen_lieu"/></td>
               <td><xsl:value-of select="ns:ten_nguyen_lieu"/></td>
               <td><xsl:value-of select="ns:don_vi"/></td>
-              <td><xsl:value-of select="ns:gia_nhap"/></td>
+              <td><xsl:value-of select="ns:gia"/></td>
             </tr>
           </xsl:for-each>
         </table>

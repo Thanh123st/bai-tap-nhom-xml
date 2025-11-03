@@ -9,6 +9,9 @@
     },
     "thanh_toans": {
       "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "maxItems": 100,
       "items": {
         "type": "object",
         "properties": {
@@ -29,10 +32,11 @@
             "enum": ["cash", "card", "none"]
           }
         },
-        "required": ["ma_thanh_toan", "ngay_thanh_toan", "so_tien", "phuong_thuc"]
-      },
-      "minItems": 1
+        "required": ["ma_thanh_toan", "ngay_thanh_toan", "so_tien", "phuong_thuc"],
+        "additionalProperties": false
+      }
     }
   },
-  "required": ["ma_don_hang", "thanh_toans"]
+  "required": ["ma_don_hang", "thanh_toans"],
+  "additionalProperties": false
 }
