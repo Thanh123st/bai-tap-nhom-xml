@@ -22,7 +22,7 @@
       <body>
         <h1>BÁO CÁO TRUY VẤN DỮ LIỆU XSLT</h1>
 
-        <!-- Lấy tất cả nhân viên -->
+        <!-- 1️⃣ Lấy tất cả nhân viên -->
         <h2>1. Danh sách tất cả nhân viên</h2>
         <table>
           <tr><th>Mã NV</th><th>Họ tên</th><th>Chức vụ</th><th>Lương</th></tr>
@@ -36,7 +36,7 @@
           </xsl:for-each>
         </table>
 
-        <!-- Nhân viên có lương > 10 triệu -->
+        <!-- 2️⃣ Nhân viên có lương > 10 triệu -->
         <h2>2. Nhân viên có lương &gt; 10,000,000</h2>
         <table>
           <tr><th>Mã NV</th><th>Họ tên</th><th>Lương</th></tr>
@@ -49,7 +49,7 @@
           </xsl:for-each>
         </table>
 
-        <!-- Khách hàng đăng ký năm 2025 -->
+        <!-- 3️⃣ Khách hàng đăng ký năm 2025 -->
         <h2>3. Khách hàng đăng ký trong năm 2025</h2>
         <table>
           <tr><th>Mã KH</th><th>Họ tên</th><th>Email</th><th>Ngày đăng ký</th></tr>
@@ -63,7 +63,7 @@
           </xsl:for-each>
         </table>
 
-        <!-- Đơn hàng của khách hàng KH001 -->
+        <!-- 4️⃣ Đơn hàng của khách hàng KH001 -->
         <h2>4. Đơn hàng của khách hàng KH001</h2>
         <table>
           <tr><th>Mã ĐH</th><th>Ngày đặt</th><th>Trạng thái</th><th>Tổng tiền</th></tr>
@@ -77,10 +77,10 @@
           </xsl:for-each>
         </table>
 
-        <!-- Nguyên liệu từ NCC003 -->
+        <!-- 5️⃣ Nguyên liệu từ NCC003 -->
         <h2>5. Nguyên liệu được cung cấp bởi NCC003</h2>
         <table>
-          <tr><th>Mã NL</th><th>Tên nguyên liệu</th><th>Đơn vị</th><th>Giá</th></tr>
+          <tr><th>Mã NL</th><th>Tên nguyên liệu</th><th>Đơn vị</th><th>Giá nhập</th></tr>
           <xsl:for-each select="//ns:NguyenLieu[ns:ma_nha_cung_cap='NCC003']">
             <tr>
               <td><xsl:value-of select="ns:ma_nguyen_lieu"/></td>
@@ -91,7 +91,7 @@
           </xsl:for-each>
         </table>
 
-        <!-- Sản phẩm dùng nguyên liệu từ NCC003 -->
+        <!-- 6️⃣ Sản phẩm dùng nguyên liệu từ NCC003 -->
         <h2>6. Sản phẩm sử dụng nguyên liệu từ NCC003</h2>
         <table>
           <tr><th>Mã SP</th><th>Tên sản phẩm</th><th>Nguyên liệu</th></tr>

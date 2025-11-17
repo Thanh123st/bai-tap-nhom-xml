@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<library>
+    <book id="" title="Lập trình Java cơ bản" author="Nguyễn Văn A" year="2023">
+        <publisher>NXB Giáo Dục</publisher>
+        <price>120000</price>
+    </book>
+
+    <book id="B002" title="Cấu trúc dữ liệu Giải thuật" author="Trần Văn B" year="2022">
+        <publisher>NXB Khoa Học</publisher>
+        <price>150000</price>
+    </book>
+</library>

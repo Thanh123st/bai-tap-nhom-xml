@@ -1,4 +1,6 @@
+from argparse import Namespace
 from pathlib import Path
+from unicodedata import name
 from lxml import etree
 
 base_dir = Path(__file__).parent
@@ -8,15 +10,13 @@ tree = etree.parse(str(xml_path))
 
 np = {"ns": "http://www.ctut.edu.vn/material"}
 
-print("=== TRUY VẤN 1: Lấy tất cả mã sản phẩm ===")
+print("=== TRUY VẤN 1: Lấy tất cả thông tin sản phẩm ===")
 for sp in tree.xpath("//ns:SanPham/ns:ma_san_pham/text()", namespaces=np):
-    print("-", sp)
-
-
+    print("-",sp) 
 
 print("\n=== TRUY VẤN 2: Lấy đơn hàng của khách hàng KH001 ===")
 for dh in tree.xpath("//ns:DonHang[ns:ma_khach_hang='KH001']/ns:ma_don_hang/text()", namespaces=np):
-    print("-", dh)
+    print("-",dh)
 
 print("\n=== TRUY VẤN 3: Lấy sản phẩm có giá > 50,000 ===")
 for sp in tree.xpath("//ns:SanPham[number(ns:gia) > 50000]/ns:ten_san_pham/text()", namespaces=np):
@@ -41,4 +41,27 @@ for sp in tree.xpath("""
     ]/ns:ten_san_pham/text()
 """, namespaces=np):
     print("-", sp)
+
+
+
+print("=== DANH SÁCH ĐƠN HÀNG KÈM TỔNG TIỀN ===")
+
+
+
+
+
+for dh in tree.xpath("//ns:DonHang",namespaces=np):
+    ma_dh = dh.xpath("string(ns:ma_don_hang)",namespaces=np)
+    total = 0
+    for ctdh in tree.xpath("//ns:ChiTietDonHang[ns:ma_don_hang=$mdh]",namespaces=np,mdh=ma_dh):
+        soluong = ctdh.xpath("number(ns:so_luong)",namespaces=np)
+        gia = ctdh.xpath("number(ns:gia_don_vi)",namespaces=np)
+        total += soluong * gia
+    for child in dh.xpath("./*",namespaces=np):
+        print(child.xpath("local-name()"),":",child.text)
+    print("Tong tien:",total)
+    print("--------------------")
+
+
+
 
